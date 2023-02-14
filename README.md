@@ -1,10 +1,10 @@
-# inspiro-blocks - The WordPress theme to unblock your creativity
+# Inspiro Blocks - Experience the Future of WordPress
 
-![inspiro-blocks Theme](https://demo.wpzoom.com/inspiro-blocks/wp-content/themes/inspiro-blocks/assets/admin/img/inspiro-blocks.png)
+![inspiro-blocks Theme](https://demo.wpzoom.com/inspiro-blocks/wp-content/themes/inspiro-blocks/assets/admin/img/pro.png)
 
 ## About
 
-inspiro-blocks is a next-generation WordPress theme that adopts the Full Site Editing concept. Using the new Theme Editor, you have complete control over the design of your website. You can now change not just the colors and fonts in your theme but also make changes to the layout and global sections like the header and footer.
+Inspiro Blocks is a block theme that supports the new Full Site Editor. The theme includes unique page templates, block patterns, and color styles that can be customized to create a beautiful website. The modern and minimalist design is perfect for videographers, photographers, creatives, and small businesses. Inspiro Blocks includes video and portfolio integration, which makes it easy for users to showcase their work and create a professional portfolio website.
 
 Download the latest stable [release](https://github.com/wpzoom/inspiro-blocks/releases)
 
