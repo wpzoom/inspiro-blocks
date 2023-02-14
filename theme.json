@@ -421,7 +421,7 @@
                 {
                     "fluid": {
                         "max": "16px",
-                        "min": "16px"
+                        "min": "14px"
                     },
                     "name": "Small",
                     "size": "16px",
@@ -430,7 +430,7 @@
                 {
                     "fluid": {
                         "max": "20px",
-                        "min": "18px"
+                        "min": "16px"
                     },
                     "name": "Medium",
                     "size": "20px",
@@ -448,7 +448,7 @@
                 {
                     "fluid": {
                         "max": "50px",
-                        "min": "34px"
+                        "min": "30px"
                     },
                     "name": "xLarge",
                     "size": "50px",
@@ -457,7 +457,7 @@
                 {
                     "fluid": {
                         "max": "36px",
-                        "min": "30px"
+                        "min": "24px"
                     },
                     "name": "36px",
                     "size": "36px",
@@ -466,7 +466,7 @@
                 {
                     "fluid": {
                         "max": "48px",
-                        "min": "36px"
+                        "min": "26px"
                     },
                     "name": "48px",
                     "size": "48px",
@@ -475,7 +475,7 @@
                 {
                     "fluid": {
                         "max": "60px",
-                        "min": "42px"
+                        "min": "30px"
                     },
                     "name": "60px",
                     "size": "60px",
@@ -484,7 +484,7 @@
                 {
                     "fluid": {
                         "max": "72px",
-                        "min": "48px"
+                        "min": "38px"
                     },
                     "name": "72px",
                     "size": "72px",
