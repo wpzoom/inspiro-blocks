@@ -1,6 +1,6 @@
 # Inspiro Blocks - Experience the Future of WordPress
 
-![inspiro-blocks Theme](https://demo.wpzoom.com/inspiro-blocks/wp-content/themes/inspiro-blocks/assets/admin/img/pro.png)
+![inspiro-blocks Theme](https://demo.wpzoom.com/inspiro-blocks/wp-content/themes/inspiro-blocks/assets/admin/img/theme_logo.png)
 
 ## About
 
