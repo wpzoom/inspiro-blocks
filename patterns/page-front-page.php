@@ -24,7 +24,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"medium"} -->
-<p class="has-text-align-center has-white-color has-text-color has-medium-font-size">Inspiro is a Portfolio &amp; Photography WordPress Theme. This area supports self-hosted videos as well as videos from YouTube and Vimeo.</p>
+<p class="has-text-align-center has-white-color has-text-color has-medium-font-size">Inspiro Blocks is a modern Portfolio &amp; Business WordPress Theme. You can add in this area any block you want or replace the background with an image. The video icon below can be replaced with a button.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:wpzoom-video-popup-block/block {"url":"https://vimeo.com/693743279","text":"","icon":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"300"}},"textColor":"white","fontSize":"max-36"} -->
@@ -49,11 +49,11 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","right":"0","left":"0"}}},"layout":{"type":"constrained","contentSize":"950px","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:0;padding-bottom:var(--wp--preset--spacing--small);padding-left:0"><!-- wp:heading {"textAlign":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"max-36"} -->
-<h2 class="has-text-align-left has-max-36-font-size" style="font-style:normal;font-weight:600">We are a Creative Agency Located in London</h2>
+<h2 class="has-text-align-left has-max-36-font-size" style="font-style:normal;font-weight:600">Experience the Future of WordPress with Inspiro</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left"} -->
-<p class="has-text-align-left">Inspiro is the perfect solution to create a beautiful website for your portfolio or your business. If you’re looking to create a captivating presence online, then you’ve found the right tool. The theme is easy to manage, with a drag-and-drop interface and fully customizable using the Theme Customizer.</p>
+<p class="has-text-align-left">Inspiro Blocks is a block theme that supports the new Full Site Editor. The theme includes unique page templates, block patterns, and color styles that can be customized to create a beautiful website. The modern and minimalist design is perfect for videographers, photographers, creatives, and small businesses. Inspiro Blocks includes video and portfolio integration, which makes it easy for users to showcase their work and create a professional portfolio website.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
