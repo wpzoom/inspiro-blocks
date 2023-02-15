@@ -23,6 +23,13 @@
             "title": "Blog with sidebar"
         },
         {
+            "name": "portfolio",
+            "postTypes": [
+                "page"
+            ],
+            "title": "Portfolio"
+        },
+        {
             "name": "services",
             "postTypes": [
                 "page"

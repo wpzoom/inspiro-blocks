@@ -257,7 +257,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Leo Palmieri</h2>
+<h2>Leah Palmieri</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
