@@ -157,15 +157,18 @@ require get_template_directory() . '/inc/admin/theme-admin.php';
 # Enqueue Admin Scripts and Styles
 --------------------------------------------------------------*/
 if ( ! function_exists( 'inspiro_blocks_admin_scripts' ) ) :
-    function inspiro_blocks_admin_scripts() {
+    function inspiro_blocks_admin_scripts( $hook ) {
+
+        if ( 'appearance_page_inspiro_blocks-theme' != $hook ) {
+            return;
+        }
+
         wp_enqueue_style( 'inspiro-blocks-admin-styles', get_template_directory_uri() . '/assets/admin/css/admin-styles.css' );
     }
     add_action( 'admin_enqueue_scripts', 'inspiro_blocks_admin_scripts' );
+
 endif;
 
-
-/* Add the link to the Customizer */
-// add_action('customize_register', function ( $manager ) {  },  10, 1 );
 
 
 /**

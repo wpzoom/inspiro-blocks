@@ -127,11 +127,9 @@
 <h2 class="has-white-color has-text-color has-max-48-font-size">Showreel</h2>
 <!-- /wp:heading -->
 
-<!-- wp:embed {"url":"https://vimeo.com/425406125","type":"video","providerNameSlug":"vimeo","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://vimeo.com/425406125
-</div></figure>
-<!-- /wp:embed -->
+<!-- wp:paragraph -->
+<p>Embed your video here</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"84px"} -->
 <div style="height:84px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -167,8 +165,8 @@ https://vimeo.com/425406125
 <!-- /wp:spacer -->
 
 <!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-46.png","id":7494,"dimRatio":50,"overlayColor":"secondary","minHeight":277,"minHeightUnit":"px","isDark":false,"className":"is-style-round-corners"} -->
-<div class="wp-block-cover is-light is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7494" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-46.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"https://vimeo.com/325637659","text":"","icon":2,"textColor":"primary"} -->
-<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="https://vimeo.com/325637659"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
+<div class="wp-block-cover is-light is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7494" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-46.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"#","text":"","icon":2,"textColor":"primary"} -->
+<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="#"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
 <!-- /wp:wpzoom-video-popup-block/block --></div></div>
 <!-- /wp:cover -->
 
@@ -195,8 +193,8 @@ https://vimeo.com/425406125
 <!-- /wp:spacer -->
 
 <!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_RW5R1EB5RC.jpg","id":7397,"dimRatio":50,"overlayColor":"secondary","minHeight":277,"minHeightUnit":"px","className":"is-style-round-corners"} -->
-<div class="wp-block-cover is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7397" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_RW5R1EB5RC.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"https://vimeo.com/325637659","text":"","icon":2,"textColor":"primary"} -->
-<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="https://vimeo.com/325637659"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
+<div class="wp-block-cover is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7397" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_RW5R1EB5RC.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"#","text":"","icon":2,"textColor":"primary"} -->
+<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="#"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
 <!-- /wp:wpzoom-video-popup-block/block --></div></div>
 <!-- /wp:cover -->
 
@@ -223,8 +221,8 @@ https://vimeo.com/425406125
 <!-- /wp:spacer -->
 
 <!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-52.png","id":7495,"dimRatio":50,"overlayColor":"secondary","minHeight":277,"minHeightUnit":"px","isDark":false,"className":"is-style-round-corners"} -->
-<div class="wp-block-cover is-light is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7495" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-52.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"https://vimeo.com/325637659","text":"","icon":2,"textColor":"primary"} -->
-<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="https://vimeo.com/325637659"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
+<div class="wp-block-cover is-light is-style-round-corners" style="min-height:277px"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7495" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>Rectangle-52.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:wpzoom-video-popup-block/block {"url":"#","text":"","icon":2,"textColor":"primary"} -->
+<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-primary-color has-text-color" href="#"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
 <!-- /wp:wpzoom-video-popup-block/block --></div></div>
 <!-- /wp:cover -->
 

@@ -18,7 +18,7 @@ function inspiro_blocks_theme_admin_menu() {
 	add_theme_page(
 		esc_html__( 'Inspiro Blocks Getting Started', 'inspiro-blocks' ),
 		esc_html__( 'Inspiro Blocks Theme', 'inspiro-blocks' ),
-		'manage_options',
+		'edit_theme_options',
 		'inspiro_blocks-theme',
 		'inspiro_blocks_admin_page_content',
 		30

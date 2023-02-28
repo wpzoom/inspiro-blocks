@@ -3,7 +3,7 @@ Contributors: WPZOOM
 Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 7.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Inspiro Blocks is a Block theme that is fully compatible with the new Full Site Editor. The theme includes unique page templates, block patterns, and color styles that can be customized to create a beautiful website. With Inspiro Blocks, you can easily build and design a website by simply dragging and dropping blocks into pages. The theme offers a modern and minimalist design that is perfect for bloggers, photographers, creatives, and small businesses. Inspiro Blocks is also an excellent choice for portfolio sites as it includes video and portfolio integration. This makes it easy for users to showcase their work and create a professional portfolio website. With the portfolio integration feature, users can display their projects in a grid or masonry layout. These features make Inspiro Blocks a great option for photographers, videographers, designers, and other creatives who want to showcase their work in a visually appealing way. The theme is fully GDPR-compliant and doesn't use any external Google Fonts. All fonts are locally hosted. The theme bundles 6 Color Schemes and 20+ Block Patterns. DEMO CONTENT & Documentation can be found here: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10132; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.wpzoom.com/documentation/inspiro-blocks/
 
 == Changelog ==
+
+= 1.0.2 =
+* Minor fixes
 
 = 1.0.1 =
 * Minor fixes & improvements
@@ -43,6 +46,10 @@ Inspiro Blocks bundles the following third-party resources:
 WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
 License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
 Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
+
+TGM Plugin Activation - http://tgmpluginactivation.com/
+The TGM Plugin Activation library is licensed under the GPL-2.0 or later license. - https://github.com/TGMPA/TGM-Plugin-Activation/blob/develop/LICENSE.md
+The TGM Plugin Activation library was created by Thomas Griffin and is currently maintained by @thomasgriffin, @GaryJones and @jrfnl.
 
 Code from Frost Theme
 Copyright (c) 2022 WP Engine

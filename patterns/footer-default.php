@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color has-link-color">146 W 29th St,<br>New York,<br>NY 10011<br><a href="https://demo.wpzoom.com/inspiro-lite/contact/">Contact us</a></p>
+<p class="has-tertiary-color has-text-color has-link-color">146 W 29th St,<br>New York,<br>NY 10011<br><a href="#">Contact us</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
