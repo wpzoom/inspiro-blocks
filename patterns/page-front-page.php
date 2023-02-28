@@ -6,8 +6,8 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"right":"0%","left":"0%"},"blockGap":"0px"}},"className":"site-content is-style-default","layout":{"type":"default"}} -->
-<main id="hero" class="wp-block-group site-content is-style-default" style="margin-top:0;padding-right:0%;padding-left:0%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4","id":7174,"dimRatio":40,"backgroundType":"video","minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0px","bottom":"0px","right":"30px","left":"30px"}}}} -->
+<!-- wp:group {"tagName":"section","style":{"spacing":{"margin":{"top":"0"},"padding":{"right":"0%","left":"0%"},"blockGap":"0px"}},"className":"site-content is-style-default","layout":{"type":"default"}} -->
+<section id="hero" class="wp-block-group site-content is-style-default" style="margin-top:0;padding-right:0%;padding-left:0%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4","id":7174,"dimRatio":40,"backgroundType":"video","minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0px","bottom":"0px","right":"30px","left":"30px"}}}} -->
 <div class="wp-block-cover alignfull is-light" style="padding-top:0px;padding-right:30px;padding-bottom:0px;padding-left:30px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"header-transparent","theme":"inspiro-blocks"} /-->
 
 <!-- wp:spacer {"height":"25vh"} -->
@@ -15,7 +15,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:group {"className":"is-style-default","layout":{"type":"constrained","contentSize":"1000px"}} -->
-<div class="wp-block-group is-style-default"><!-- wp:spacer {"height":"4vh"} -->
+<div id="hero" class="wp-block-group is-style-default"><!-- wp:spacer {"height":"4vh"} -->
 <div style="height:4vh" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -27,8 +27,8 @@
 <p class="has-text-align-center has-white-color has-text-color has-medium-font-size">Inspiro Blocks is a modern Portfolio &amp; Business WordPress Theme. You can add in this area any block you want or replace the background with an image. The video icon below can be replaced with a button.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:wpzoom-video-popup-block/block {"url":"#","text":"","icon":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"300"}},"textColor":"white","fontSize":"max-36"} -->
-<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-white-color has-text-color has-max-36-font-size" href="#" style="font-style:normal;font-weight:300"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
+<!-- wp:wpzoom-video-popup-block/block {"text":"","icon":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"300"}},"textColor":"white","fontSize":"max-36"} -->
+<a class="wp-block-wpzoom-video-popup-block-block wpzoom-video-popup-block has-white-color has-text-color has-max-36-font-size" style="font-style:normal;font-weight:300"><span class="wpzoom-video-popup-block_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="m14.25 10.367c-1-0.57778-2.2504 0.14388-2.2504 1.2988v8.6674c0 1.155 1.2504 1.8766 2.2504 1.2988l8.2498-4.7666c0.3094-0.1786 0.4998-0.5088 0.4998-0.86588 0-0.35714-0.1904-0.68718-0.4998-0.86586zm-14.25 5.6326c0-8.8366 7.1634-16 16-16 8.8366 0 16 7.1634 16 16 0 8.8366-7.1634 16-16 16-8.8366 0-16-7.1634-16-16zm16-14c-7.732 0-14 6.268-14 14 0 7.732 6.268 14 14 14 7.732 0 14-6.268 14-14 0-7.732-6.268-14-14-14z" fill="currentColor"></path></svg></span></a>
 <!-- /wp:wpzoom-video-popup-block/block -->
 
 <!-- wp:spacer {"height":"5vh"} -->
@@ -39,11 +39,11 @@
 <!-- wp:spacer {"height":"25vh"} -->
 <div style="height:25vh" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
-<!-- /wp:cover --></main>
+<!-- /wp:cover --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"pattern_multiple_covers","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group alignfull pattern_multiple_covers" id="intro"><!-- wp:spacer {"height":"46px"} -->
+<!-- wp:group {"tagName":"main","align":"full","className":"pattern_multiple_covers","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<main class="wp-block-group alignfull pattern_multiple_covers" id="content"><!-- wp:spacer {"height":"46px"} -->
 <div style="height:46px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -65,7 +65,7 @@
 <!-- wp:spacer {"height":"46px"} -->
 <div style="height:46px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0px"}}},"backgroundColor":"secondary","className":"portfolio-dark","layout":{"type":"constrained"}} -->
