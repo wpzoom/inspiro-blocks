@@ -127,9 +127,13 @@
 <h2 class="has-white-color has-text-color has-max-48-font-size">Showreel</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Embed your video here</p>
-<!-- /wp:paragraph -->
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:video {"id":7174} -->
+<figure class="wp-block-video"><video controls src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4"></video></figure>
+<!-- /wp:video -->
 
 <!-- wp:spacer {"height":"84px"} -->
 <div style="height:84px" aria-hidden="true" class="wp-block-spacer"></div>
