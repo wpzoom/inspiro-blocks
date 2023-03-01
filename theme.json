@@ -812,7 +812,8 @@
             }
         },
         "color": {
-            "text": "var(--wp--preset--color--tertiary)"
+            "text": "var(--wp--preset--color--tertiary)",
+            "background": "var:preset|color|white"
         },
         "elements": {
             "button": {
