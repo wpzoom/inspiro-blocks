@@ -8,6 +8,30 @@
  * @link    https://www.wpzoom.com/
  */
 
+/**
+ * Define Constants
+ */
+define( 'INSPIRO_THEME_DIR', trailingslashit( get_template_directory() ) );
+
+/**
+ * Enqueues scripts and styles
+ */
+require INSPIRO_THEME_DIR . 'inc/classes/class-inspiro-enqueue-scripts.php';
+
+
+/**
+ * Theme admin notices and info page
+ */
+if ( is_admin() ) {
+    require INSPIRO_THEME_DIR . 'inc/admin-notice.php';
+    require INSPIRO_THEME_DIR . 'inc/theme-info-page.php';
+
+    if ( current_user_can( 'manage_options' ) ) {
+        require INSPIRO_THEME_DIR . 'inc/classes/class-inspiro-notices.php';
+        require INSPIRO_THEME_DIR . 'inc/classes/class-inspiro-notice-review.php';
+    }
+}
+
 
 if ( ! function_exists( 'inspiro_blocks_setup' ) ) {
 
@@ -149,26 +173,6 @@ if ( ! function_exists( 'inspiro_blocks_register_block_pattern_categories' ) ) {
     add_action( 'init', 'inspiro_blocks_register_block_pattern_categories', 9 );
 
 }
-
-// Theme Admin Page
-require get_template_directory() . '/inc/admin/theme-admin.php';
-
-/*--------------------------------------------------------------
-# Enqueue Admin Scripts and Styles
---------------------------------------------------------------*/
-if ( ! function_exists( 'inspiro_blocks_admin_scripts' ) ) :
-    function inspiro_blocks_admin_scripts( $hook ) {
-
-        if ( 'appearance_page_inspiro_blocks-theme' != $hook ) {
-            return;
-        }
-
-        wp_enqueue_style( 'inspiro-blocks-admin-styles', get_template_directory_uri() . '/assets/admin/css/admin-styles.css' );
-    }
-    add_action( 'admin_enqueue_scripts', 'inspiro_blocks_admin_scripts' );
-
-endif;
-
 
 
 /**
