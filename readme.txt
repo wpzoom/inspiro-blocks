@@ -3,7 +3,7 @@ Contributors: WPZOOM
 Requires at least: 6.1
 Tested up to: 6.2
 Requires PHP: 7.2
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Inspiro Blocks is a Block theme that is fully compatible with the new Full Site Editor. The theme includes unique page templates, block patterns, and color styles that can be customized to create a beautiful website. With Inspiro Blocks, you can easily build and design a website by simply dragging and dropping blocks into pages. The theme offers a modern and minimalist design that is perfect for bloggers, photographers, creatives, and small businesses. Inspiro Blocks is also an excellent choice for portfolio sites as it includes video and portfolio integration. This makes it easy for users to showcase their work and create a professional portfolio website. With the portfolio integration feature, users can display their projects in a grid or masonry layout. These features make Inspiro Blocks a great option for photographers, videographers, designers, and other creatives who want to showcase their work in a visually appealing way. The theme is fully GDPR-compliant and doesn't use any external Google Fonts. All fonts are locally hosted. The theme bundles 6 Color Schemes and 20+ Block Patterns. DEMO CONTENT & Documentation can be found here: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10132; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.wpzoom.com/documentation/inspiro-blocks/
 
 == Changelog ==
+
+= 1.1.0 =
+* ⚠️ IMPORTANT: In order to offer more control over your website, we've made changes to the included page templates. Now you can assign any page with any template as your front page. The front and blog pages will now respect the configuration set in Settings > Reading.
+* The front-page.html file was removed to allow assigning any page as the front page
+* Added new "Page with Header" page template
+* Multiple fixes and improvements
 
 = 1.0.4 =
 * Minor improvements to the menu colors
@@ -109,3 +115,7 @@ https://stocksnap.io/photo/people-man-6O7JXC5DC5
 https://stocksnap.io/photo/people-man-356BERTH29
 https://stocksnap.io/photo/video-production-KV0WLH355C
 https://stocksnap.io/photo/technology-camera-H0O97B44CT
+
+
+= 1.1.0 =
+⚠️ IMPORTANT: In order to offer more control over your website, we've made changes to the included page templates. Now you can assign any page with any template as your front page. The front and blog pages will now respect the configuration set in Settings > Reading.

@@ -8,7 +8,7 @@ Tags: blog, block-styles, grid-layout, one-column, two-columns, three-columns, f
 Requires at least: 6.1
 Tested up to: 6.2
 Requires PHP: 7.2
-Version: 1.0.4
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inspiro-blocks
@@ -63,6 +63,17 @@ a:hover {
 .wp-block-comment-template .wp-block-comment-content a:hover,
 .entry-content a:hover {
     text-decoration: none;
+}
+
+.wp-block-heading a,
+.wp-block-post-title a,
+.entry-content a.wp-element-button {
+    text-decoration: none;
+}
+
+.wp-block-heading a:hover,
+.wp-block-post-title a:hover {
+    text-decoration: underline;
 }
 
 ol,
@@ -970,6 +981,7 @@ textarea {
     filter: grayscale(100%);
 }
 
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
@@ -1061,7 +1073,22 @@ textarea {
         margin-left: -120px;
     }
 
+
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .wpz-header-cover .wp-block-spacer {
+        max-height: 100px;
+    }
+
+    .wpz-header-cover .wp-block-cover,
+    .wpz-header-cover .wp-block-cover-image {
+        min-height: 300px;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
 

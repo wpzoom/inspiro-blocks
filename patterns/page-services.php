@@ -50,8 +50,8 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_356BERTH29.jpg","id":7392,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7392" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_356BERTH29.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h1 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Video<br>Production</h1>
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7392" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_356BERTH29.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Video<br>Production</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
@@ -62,8 +62,8 @@
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_KV0WLH355C.jpg","id":7394,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7394" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_KV0WLH355C.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h1 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Professional<br>Editing</h1>
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7394" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_KV0WLH355C.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Professional<br>Editing</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
@@ -74,8 +74,8 @@
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_P9QYJ8AAL8.jpg","id":7497,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7497" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_P9QYJ8AAL8.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h1 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Aerial<br>Video</h1>
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7497" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_P9QYJ8AAL8.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Aerial<br>Video</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
@@ -97,17 +97,17 @@
 <div style="height:88px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"level":1,"textColor":"white","fontSize":"max-48"} -->
-<h1 class="has-white-color has-text-color has-max-48-font-size">Why us?</h1>
+<!-- wp:heading {"level":3,"textColor":"white","fontSize":"max-48"} -->
+<h3 class="wp-block-heading has-white-color has-text-color has-max-48-font-size">Why us?</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really <br>supposed to read this dummy copy.</p>
+<!-- wp:paragraph {"textColor":"white"} -->
+<p class="has-white-color has-text-color">This is some dummy copy. You’re not really <br>supposed to read this dummy copy.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"0px"},"typography":{"textTransform":"uppercase"}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link wp-element-button" style="border-radius:0px">Learn More</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"border":{"radius":"0px"},"typography":{"textTransform":"uppercase"}},"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link has-white-color has-text-color wp-element-button" style="border-radius:0px">Learn More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -118,8 +118,8 @@
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"0px","margin":{"top":"0px","bottom":"0px"}}},"backgroundColor":"black","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div id="reel" class="wp-block-group has-black-background-color has-background" style="margin-top:0px;margin-bottom:0px"><!-- wp:spacer {"height":"84px"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0px","margin":{"top":"0px","bottom":"0px"}}},"backgroundColor":"black","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group alignfull has-black-background-color has-background" id="reel" style="margin-top:0px;margin-bottom:0px"><!-- wp:spacer {"height":"84px"} -->
 <div style="height:84px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 

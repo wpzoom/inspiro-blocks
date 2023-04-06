@@ -33,15 +33,28 @@ class Inspiro_Notice_Review extends Inspiro_Notices {
 	 * @return void
 	 */
 	public function review_notice() {
+        global $pagenow, $inspiro_version;
+
 		if ( ! get_option( 'inspiro_theme_installed_time' ) ) {
 			update_option( 'inspiro_theme_installed_time', time() );
 		}
 
 		$this_notice_was_dismissed = $this->get_notice_status( 'review-user-' . $this->current_user_id );
 
-		if ( ! $this_notice_was_dismissed ) {
-			add_action( 'admin_notices', array( $this, 'review_notice_markup' ) ); // Display this notice.
-		}
+        $current_user_can      = current_user_can( 'edit_theme_options' );
+
+        $should_display_notice = ( $current_user_can && 'index.php' === $pagenow  ) || ( $current_user_can && 'themes.php' === $pagenow && isset( $_GET['activated'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+
+        if ( $should_display_notice ) {
+
+    		if ( ! $this_notice_was_dismissed ) {
+
+                wp_enqueue_style( 'welcome-notice', get_template_directory_uri() . '/assets/admin/css/welcome-notice.css' );
+
+    			add_action( 'admin_notices', array( $this, 'review_notice_markup' ) ); // Display this notice.
+    		}
+
+        }
 	}
 
 	/**
