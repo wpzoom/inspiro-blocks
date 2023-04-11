@@ -6,9 +6,9 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"tagName":"section","style":{"spacing":{"margin":{"top":"0"},"padding":{"right":"0%","left":"0%"},"blockGap":"0px"}},"className":"site-content is-style-default","layout":{"type":"default"}} -->
-<section id="hero" class="wp-block-group site-content is-style-default" style="margin-top:0;padding-right:0%;padding-left:0%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4","id":7174,"dimRatio":40,"backgroundType":"video","minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0px","bottom":"0px","right":"30px","left":"30px"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:0px;padding-right:30px;padding-bottom:0px;padding-left:30px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"header-transparent","theme":"inspiro-blocks"} /-->
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"margin":{"top":"0"},"padding":{"right":"0%","left":"0%"},"blockGap":"0px"}},"className":"site-content is-style-default","layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull site-content is-style-default" id="hero" style="margin-top:0;padding-right:0%;padding-left:0%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4","id":7174,"dimRatio":40,"backgroundType":"video","minHeightUnit":"px","contentPosition":"center center","isDark":false,"style":{"spacing":{"padding":{"top":"0px","bottom":"0px","right":"30px","left":"30px"}}}} -->
+<div class="wp-block-cover is-light" style="padding-top:0px;padding-right:30px;padding-bottom:0px;padding-left:30px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/video/'; ?>video.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"header-transparent","theme":"inspiro-blocks"} /-->
 
 <!-- wp:spacer {"height":"25vh"} -->
 <div style="height:25vh" aria-hidden="true" class="wp-block-spacer"></div>
@@ -20,7 +20,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"white","fontSize":"max-72"} -->
-<h1 class="has-text-align-center has-white-color has-text-color has-max-72-font-size" style="font-style:normal;font-weight:600">Create. Amaze. Inspire</h1>
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color has-max-72-font-size" style="font-style:normal;font-weight:600">Create. Amaze. Inspire</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"medium"} -->
@@ -622,8 +622,4 @@
 <!-- wp:separator {"backgroundColor":"tertiary","className":"is-style-wide"} -->
 <hr class="wp-block-separator has-text-color has-tertiary-color has-alpha-channel-opacity has-tertiary-background-color has-background is-style-wide"/>
 <!-- /wp:separator --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"margin":{"top":"0"}},"color":{"gradient":"linear-gradient(180deg,rgb(14,21,31) 0%,rgb(14,21,31) 73%,rgb(249,250,253) 73%,rgb(249,250,253) 100%)"}},"className":"site-content","layout":{"type":"constrained"}} -->
-<main class="wp-block-group alignfull site-content has-background" id="cta-footer" style="background:linear-gradient(180deg,rgb(14,21,31) 0%,rgb(14,21,31) 73%,rgb(249,250,253) 73%,rgb(249,250,253) 100%);margin-top:0"></main>
 <!-- /wp:group -->
