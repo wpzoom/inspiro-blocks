@@ -240,17 +240,19 @@ function inspiro_blocks_extract_font_families( $data = array() ) {
 */
 function inspiro_blocks_theme_fonts() {
     
-	$fonts_url = inspiro_blocks_get_fonts_url();
+	$theme_fonts_url             = inspiro_blocks_get_fonts_url();
+	$theme_fonts_url_for_editor  = inspiro_blocks_get_fonts_url( true );
 
     // Load Fonts if necessary.
     if ( $fonts_url ) {
         require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-        wp_enqueue_style( 'inspiro-blocks-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), wp_get_theme()->get( 'Version' ) );
+        wp_enqueue_style( 'inspiro-blocks-theme-fonts', wptt_get_webfont_url( $theme_fonts_url ), array(), wp_get_theme()->get( 'Version' ) );
+		add_editor_style( $theme_fonts_url_for_editor );
     }
-
 }
-
+add_action( 'admin_init', 'inspiro_blocks_theme_fonts', 1 );
 add_action( 'wp_enqueue_scripts', 'inspiro_blocks_theme_fonts', 1 );
+add_action( 'enqueue_block_editor_assets', 'inspiro_blocks_theme_fonts', 1 );
 
 /*
  * Gutenberg Editor CSS
@@ -274,7 +276,21 @@ function inspiro_blocks_gutenberg_editor_css() {
 /**
  * Retrieve webfont URL to load fonts locally.
  */
-function inspiro_blocks_get_fonts_url() {
+function inspiro_blocks_get_fonts_url( $all = false ) {
+
+	//Set default theme typography font families
+	$theme_default_typo = array(
+		'inter',
+		'montserrat',
+		'bitter',
+		'raleway',
+		'epilogue',
+		'source-sans-pro',
+		'poppins',
+		'nunito',
+		'yeseva-one',
+		'josefin-sans'
+	);
 
 	$fonts_to_download = array();
 
@@ -320,11 +336,22 @@ function inspiro_blocks_get_fonts_url() {
         'yeseva-one'         => 'Yeseva+One'
     );
 
+	//Get user's saved custom typography
 	$user_custom_typos = inspiro_blocks_get_custom_typography();
+	
+	//Combine default and custom typography
+	$theme_custom_typo = array_merge( $user_custom_typo, $theme_default_typo );
+	
+	$theme_custom_typo = array_unique( $theme_custom_typo );
 
-	if( !empty( $user_custom_typos ) ) {
-		foreach( $user_custom_typos as $user_custom_typo ) {
-			$fonts_to_download[] = isset( $font_families[ $user_custom_typo ] ) ? $font_families[ $user_custom_typo ] : '';
+	if( !empty( $theme_custom_typo ) ) {
+
+		foreach( $theme_custom_typo as $value ) {
+			$fonts_to_download[] = isset( $font_families[ $value ] ) ? $font_families[ $value ] : '';
+		}
+
+		if( $all ) {
+			$fonts_to_download = $font_families;
 		}
 
 		$query_args = array(
