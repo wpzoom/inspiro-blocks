@@ -340,7 +340,7 @@ function inspiro_blocks_get_fonts_url( $all = false ) {
     );
 
 	//Get user's saved custom typography
-	$user_custom_typos = inspiro_blocks_get_custom_typography();
+	$user_custom_typo = inspiro_blocks_get_custom_typography();
 	
 	//Combine default and custom typography
 	$theme_custom_typo = array_merge( $user_custom_typo, $theme_default_typo );
