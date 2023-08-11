@@ -244,11 +244,14 @@ function inspiro_blocks_theme_fonts() {
 	$theme_fonts_url_for_editor  = inspiro_blocks_get_fonts_url( true );
 
     // Load Fonts if necessary.
-    if ( $fonts_url ) {
+    if ( $theme_fonts_url ) {
         require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
         wp_enqueue_style( 'inspiro-blocks-theme-fonts', wptt_get_webfont_url( $theme_fonts_url ), array(), wp_get_theme()->get( 'Version' ) );
-		add_editor_style( $theme_fonts_url_for_editor );
     }
+	if( $theme_fonts_url_for_editor ) {
+		add_editor_style( $theme_fonts_url_for_editor );
+	}
+
 }
 add_action( 'admin_init', 'inspiro_blocks_theme_fonts', 1 );
 add_action( 'wp_enqueue_scripts', 'inspiro_blocks_theme_fonts', 1 );
