@@ -72,7 +72,7 @@ if ( ! function_exists( 'inspiro_welcome_notice' ) ) {
 			</a>
 
             <div class="wpz-notice-image">
-                <a href="https://www.wpzoom.com/themes/inspiro-blocks/" title="Inspiro Blocks" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/admin/inspiro-top.png' ); ?>" width="233" alt="<?php echo esc_attr__( 'Inspiro Blocks', 'inspiro-blocks' ); ?>" /></a>
+                <a href="https://www.wpzoom.com/themes/inspiro-blocks/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-blocks-banner-top" title="Inspiro Blocks" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/admin/inspiro-top.png' ); ?>" width="233" alt="<?php echo esc_attr__( 'Inspiro Blocks', 'inspiro-blocks' ); ?>" /></a>
             </div>
 
             <div class="wpz-notice-text">
@@ -91,7 +91,7 @@ if ( ! function_exists( 'inspiro_welcome_notice' ) ) {
     					printf( esc_html__( '%s Blocks Dashboard &rarr;', 'inspiro-blocks' ), 'Inspiro' );
     					?>
     				</a>
-    				<a class="button button-secondary" href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/', 'inspiro-blocks' ) ); ?>" target="_blank">
+    				<a class="button button-secondary" href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-blocks-banner-top', 'inspiro-blocks' ) ); ?>" target="_blank">
     					<?php esc_html_e( 'Discover Inspiro Blocks PRO &rarr;', 'inspiro-blocks' ); ?>
     				</a>
     			</div>

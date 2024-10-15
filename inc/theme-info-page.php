@@ -86,7 +86,7 @@ function inspiro_display_theme_page() {
                                             <?php esc_html_e( 'Go to Site Editor &rarr;', 'inspiro-blocks' ); ?>
                                         </a>
 
-                                        <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-secondary">
+                                        <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-secondary">
                                             <?php esc_html_e( 'Get the PRO version &rarr;', 'inspiro-blocks' ); ?>
                                         </a>
 
@@ -144,7 +144,7 @@ function inspiro_display_theme_page() {
                                                         <?php esc_html_e( 'You can quickly import pre-designed pages from the demo by inserting Block Patterns in pages.', 'inspiro-blocks' ); ?>
                                                     </p>
                                                     <p class="section_footer">
-                                                        <a href="https://www.wpzoom.com/documentation/inspiro-blocks-pro/adding-block-patterns-with-demo-pages/" target="_blank" class="button button-primary">
+                                                        <a href="https://www.wpzoom.com/documentation/inspiro-blocks-pro/adding-block-patterns-with-demo-pages/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" class="button button-primary">
                                                             <?php esc_html_e( 'See instructions &rarr;', 'inspiro-blocks' ); ?>
                                                         </a>
 
@@ -167,7 +167,7 @@ function inspiro_display_theme_page() {
                                                         <?php esc_html_e( 'If you have a logo image, you can upload it in the header using the Site Logo block.', 'inspiro-blocks' ); ?>
                                                     </p>
                                                     <p class="section_footer">
-                                                        <a href="https://www.wpzoom.com/documentation/inspiro-blocks-pro/how-to-upload-your-logo-image-in-the-header/" target="_blank" class="button button-primary">
+                                                        <a href="https://www.wpzoom.com/documentation/inspiro-blocks-pro/how-to-upload-your-logo-image-in-the-header/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" class="button button-primary">
                                                             <?php esc_html_e( 'See instructions &rarr;', 'inspiro-blocks' ); ?>
                                                         </a>
 
@@ -198,7 +198,7 @@ function inspiro_display_theme_page() {
 
                                                         <?php } ?>
 
-                                                        <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/documentation/inspiro-lite/inspiro-lite-how-to-create-a-portfolio-section/', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-secondary">
+                                                        <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/documentation/inspiro-lite/inspiro-lite-how-to-create-a-portfolio-section/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-secondary">
                                                             <?php esc_html_e( 'How to Create a Portfolio?', 'inspiro-blocks' ); ?>
                                                         </a>
                                                     </p>
@@ -293,7 +293,7 @@ function inspiro_display_theme_page() {
 
                                             <span class="many-more"><?php esc_html_e( 'And many other premium features...', 'inspiro-blocks' ); ?></span>
 
-                                            <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-large button-primary">
+                                            <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-large button-primary">
                                                 <?php esc_html_e( 'Get Inspiro Blocks PRO Today &rarr;', 'inspiro-blocks' ); ?>
                                             </a>
 
@@ -393,7 +393,7 @@ function inspiro_display_theme_page() {
                                                         <td></td>
                                                         <td></td>
                                                         <td>
-                                                            <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/" target="_blank" class="button button-primary">
+                                                            <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" class="button button-primary">
                                                                 <?php esc_html_e( 'Get Inspiro Blocks PRO Today!', 'inspiro-blocks' ); ?>
                                                             </a>
                                                         </td>
@@ -471,7 +471,7 @@ function inspiro_display_theme_page() {
                                     <br />
                                     <p class="wpz-onboard_content-main-intro"><em><?php esc_html_e( 'More demos are added with new major update!', 'inspiro-blocks' ); ?></em></p>
 
-                                    <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-large button-primary">
+                                    <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-large button-primary">
                                         <?php esc_html_e( 'Get Inspiro Blocks PRO Today &rarr;', 'inspiro-blocks' ); ?>
                                     </a>
 
@@ -495,10 +495,10 @@ function inspiro_display_theme_page() {
                                     </svg> <?php esc_html_e( 'Inspiro Blocks PRO', 'inspiro-blocks' ); ?></h3>
                                 <p class="wpz-onboard_content-side-section-content"><?php esc_html_e( 'Upgrade to the Premium version to get instant access to unique features and dozen of pre-built demos!', 'inspiro-blocks' ); ?></p>
 
-                                <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/" title="Inspiro Blocks PRO" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/admin/inspiro-premium.png' ); ?>" width="300" alt="<?php echo esc_attr__( 'Inspiro Premium', 'inspiro-blocks' ); ?>" /></a>
+                                <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" title="Inspiro Blocks PRO" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/admin/inspiro-premium.png' ); ?>" width="300" alt="<?php echo esc_attr__( 'Inspiro Premium', 'inspiro-blocks' ); ?>" /></a>
 
                                 <div class="wpz-onboard_content-side-section-button">
-                                    <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/" title="Inspiro Blocks PRO" target="_blank" class="button"><?php esc_html_e( 'Discover the PRO Version &rarr;', 'inspiro-blocks' ); ?></a>
+                                    <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" title="Inspiro Blocks PRO" target="_blank" class="button"><?php esc_html_e( 'Discover the PRO Version &rarr;', 'inspiro-blocks' ); ?></a>
                                 </div>
 
                             </div>
@@ -511,7 +511,7 @@ function inspiro_display_theme_page() {
                                     </svg> <?php esc_html_e( 'Need help?', 'inspiro-blocks' ); ?></h3>
                                 <p class="wpz-onboard_content-side-section-content"><?php esc_html_e( 'Documentation is the place where you’ll find the information needed to setup the theme quickly, and other details about theme-specific features. You can also get in touch with our team by contacting us through our website or using the Support Forum.', 'inspiro-blocks' ); ?></p>
                                 <div class="wpz-onboard_content-side-section-button">
-                                    <a href="https://www.wpzoom.com/documentation/inspiro-blocks/" title="Read documentation" target="_blank" class="button"><?php esc_html_e( 'Documentation', 'inspiro-blocks' ); ?></a> <a href="https://wordpress.org/support/theme/inspiro-blocks/" title="Open Support Desk" target="_blank" class="button"><?php esc_html_e( 'Support Forums', 'inspiro-blocks' ); ?></a>
+                                    <a href="https://www.wpzoom.com/documentation/inspiro-blocks/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" title="Read documentation" target="_blank" class="button"><?php esc_html_e( 'Documentation', 'inspiro-blocks' ); ?></a> <a href="https://wordpress.org/support/theme/inspiro-blocks/" title="Open Support Desk" target="_blank" class="button"><?php esc_html_e( 'Support Forums', 'inspiro-blocks' ); ?></a>
 
                                 </div>
 
@@ -585,13 +585,13 @@ function inspiro_display_theme_page() {
             </div> <!-- /#tabs -->
 
             <div class="wpz-onboard_footer">
-                <h3 class="wpz-onboard_footer-logo"><a href="https://wpzoom.com/" title="WPZOOM">WPZOOM</a></h3>
+                <h3 class="wpz-onboard_footer-logo"><a href="https://wpzoom.com/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" title="WPZOOM">WPZOOM</a></h3>
 
                 <ul class="wpz-onboard_footer-links">
-                    <li class="wpz-onboard_footer-links-themes"><a href="https://www.wpzoom.com/themes/" target="_blank" title="Themes">Premium Themes</a></li>
-                    <li class="wpz-onboard_footer-links-plugins"><a href="https://www.wpzoom.com/plugins/" target="_blank" title="Plugins">Plugins</a></li>
-                    <li class="wpz-onboard_footer-links-blog"><a href="https://www.wpzoom.com/blog/" target="_blank" title="Blog">Our Blog</a></li>
-                    <li class="wpz-onboard_footer-links-support"><a href="https://www.wpzoom.com/support/" target="_blank" title="Support">Support</a></li>
+                    <li class="wpz-onboard_footer-links-themes"><a href="https://www.wpzoom.com/themes/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" title="Themes">Premium Themes</a></li>
+                    <li class="wpz-onboard_footer-links-plugins"><a href="https://www.wpzoom.com/plugins/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" title="Plugins">Plugins</a></li>
+                    <li class="wpz-onboard_footer-links-blog"><a href="https://www.wpzoom.com/blog/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" title="Blog">Our Blog</a></li>
+                    <li class="wpz-onboard_footer-links-support"><a href="https://www.wpzoom.com/support/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" title="Support">Support</a></li>
                 </ul>
             </div>
         </div>
