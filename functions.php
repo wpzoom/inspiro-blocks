@@ -204,34 +204,50 @@ function inspiro_blocks_extract_font_families( $data = array() ) {
 	}
 
 	$pattern  = '/var:preset\|font-family\|([^|]+)/';
-	$pattern2 = '/var\(--wp--preset--font-family--(\w+)\)/';
+	$pattern2 = '/var\(--wp--preset--font-family--([\w\-]+)\)/';
 	$preset_patern = 'var(--wp--preset--font-family--';
 
 	$font_families = $matches = $matches2 = array();
 
-	foreach ( $data as $key => $value ) {
-        
-		if( $key === 'fontFamily') {
+    $data = getFontFamilyValues($data);
 
-			if ( strpos( $value, $preset_patern ) !== false ) {
-				if ( preg_match( $pattern2, $value, $matches2 ) ) {
-					$value = $matches2[1];
-					$font_families[] = $value;	
-				}
-			} else {
-				if( preg_match_all( $pattern, $value, $matches ) ) {
-					$value = end( $matches[1] );
-				}
-				$font_families[] = $value;
-			}
-		} elseif ( is_array( $value ) ) {
-			$font_families = array_merge( $font_families, inspiro_blocks_extract_font_families( $value ) );
+	foreach ( $data as $key => $value ) {
+
+
+        if ( strpos( $value, $preset_patern ) !== false ) {
+            if ( preg_match( $pattern2, $value, $matches2 ) ) {
+                $value = $matches2[1];
+                $font_families[] = $value;	
+            }
+        } else {
+            if( preg_match_all( $pattern, $value, $matches ) ) {
+                $value = end( $matches[1] );
+            }
+            $font_families[] = $value;
+        }
+
+    }
+
+	$font_families = array_unique( $font_families );
+
+	return $font_families;
+
+}
+
+function getFontFamilyValues( $array, $excludeKey = 'fontFamilies' ) {
+    
+    $fontFamilies = [];
+    foreach ($array as $key => $value) {
+        if (is_array($value)) {
+            if ($key !== $excludeKey) {
+                $fontFamilies = array_merge($fontFamilies, getFontFamilyValues($value, $excludeKey));
+            }
+        } elseif ($key === 'fontFamily') {
+            $fontFamilies[] = $value;
         }
     }
 
-	$font_families = array_unique( $font_families );	
-
-	return $font_families;
+    return $fontFamilies;
 }
 
 
