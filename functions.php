@@ -213,7 +213,6 @@ function inspiro_blocks_extract_font_families( $data = array() ) {
 
 	foreach ( $data as $key => $value ) {
 
-
         if ( strpos( $value, $preset_patern ) !== false ) {
             if ( preg_match( $pattern2, $value, $matches2 ) ) {
                 $value = $matches2[1];
@@ -226,7 +225,7 @@ function inspiro_blocks_extract_font_families( $data = array() ) {
             $font_families[] = $value;
         }
 
-    }
+    }	
 
 	$font_families = array_unique( $font_families );
 
@@ -360,13 +359,14 @@ function inspiro_blocks_get_fonts_url( $all = false ) {
 	
 	//Combine default and custom typography
 	$theme_custom_typo = array_merge( $user_custom_typo, $theme_default_typo );
-	
 	$theme_custom_typo = array_unique( $theme_custom_typo );
 
-	if( !empty( $theme_custom_typo ) ) {
+	if( ! empty( $theme_custom_typo ) ) {
 
 		foreach( $theme_custom_typo as $value ) {
-			$fonts_to_download[] = isset( $font_families[ $value ] ) ? $font_families[ $value ] : '';
+			if( isset( $font_families[ $value ] ) ) {
+				$fonts_to_download[] = $font_families[ $value ];
+			}
 		}
 
 		if( $all ) {
