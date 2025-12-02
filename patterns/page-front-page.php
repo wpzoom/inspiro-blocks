@@ -2,13 +2,8 @@
 /**
  * Title: Homepage
  * Slug: inspiro-blocks/page-front-page
- * Description:
  * Categories: inspiro-blocks-page
- * Keywords:
  * Viewport Width: 1280
- * Block Types:
- * Post Types:
- * Inserter: true
  */
 ?>
 <!-- wp:group {"tagName":"section","align":"full","className":"site-content is-style-default","style":{"spacing":{"margin":{"top":"0"},"padding":{"right":"0%","left":"0%"},"blockGap":"0px"}},"layout":{"type":"default"}} -->

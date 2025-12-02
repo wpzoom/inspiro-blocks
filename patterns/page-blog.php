@@ -2,13 +2,8 @@
 /**
  * Title: Blog page
  * Slug: inspiro-blocks/page-blog
- * Description: 
  * Categories: inspiro-blocks-query
- * Keywords: 
  * Viewport Width: 1280
- * Block Types: 
- * Post Types: 
- * Inserter: true
  */
 ?>
 <!-- wp:spacer {"height":"64px"} -->
