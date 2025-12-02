@@ -419,6 +419,16 @@ function inspiro_blocks_register_required_plugins() {
             'slug'      => 'wpzoom-portfolio',
             'required'  => false,
         ),
+        array(
+            'name'      => 'WPZOOM Video Popup Block',
+            'slug'      => 'wpzoom-video-popup-block',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'Icon Block',
+            'slug'      => 'icon-block',
+            'required'  => false,
+        ),
 
     );
 

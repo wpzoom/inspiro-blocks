@@ -9,7 +9,7 @@
 ?>
 <!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"margin":{"top":"0"}}},"className":"site-content","layout":{"type":"default"}} -->
 <main class="wp-block-group alignfull site-content id="header" style="margin-top:0"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"overlayColor":"black","focalPoint":{"x":0.50,"y":0.50},"align":"full","className":"is-style-default","style":{"spacing":{"padding":{"top":"0px"}}}} -->
-<div class="wp-block-cover alignfull is-style-default" style="padding-top:0px"><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"header-transparent","theme":"inspiro-blocks"} /-->
+<div class="wp-block-cover alignfull is-style-default" style="padding-top:0px"><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"header-transparent"} /-->
 
 <!-- wp:group {"className":"is-style-default","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-default"><!-- wp:spacer {"height":"251px"} -->
