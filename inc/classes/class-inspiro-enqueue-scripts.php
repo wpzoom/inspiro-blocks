@@ -35,7 +35,7 @@ if ( ! class_exists( 'Inspiro_Enqueue_Scripts' ) ) {
 		 */
 		public function admin_scripts($hook) {
 
-            wp_enqueue_style( 'inspiro-admin', get_template_directory_uri() . '/assets/admin/css/admin.css' );
+            wp_enqueue_style( 'inspiro-admin', get_template_directory_uri() . '/assets/admin/css/admin.css', array(), wp_get_theme()->get( 'Version' ) );
 
             // if ( 'inspiro' === $hook ) {
             if ( 'appearance_page_page-inspiro' != $hook ) {
