@@ -16,7 +16,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":1,"textColor":"white","fontSize":"max-48"} -->
-<h1 class="has-white-color has-text-color has-max-48-font-size">About Us</h1>
+<h1 class="has-white-color has-text-color has-max-48-font-size"><?php echo esc_html__( 'About Us', 'inspiro-blocks' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"63px"} -->
@@ -37,15 +37,15 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"left":"var:preset|spacing|80"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-left:var(--wp--preset--spacing--80);flex-basis:50%"><!-- wp:paragraph {"textColor":"primary"} -->
-<p class="has-primary-color has-text-color">OUR EXPERTISE</p>
+<p class="has-primary-color has-text-color"><?php echo esc_html__( 'OUR EXPERTISE', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">Duis aute irure dolor reprehenderit</h2>
+<h2 class="has-max-48-font-size"><?php echo esc_html__( 'Duis aute irure dolor reprehenderit', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who <a href="#">need some type</a> to visualize what the actual copy might look like if it were real content.<br><br>If you want to read, I might suggest a good book, perhaps Hemingway or Melville. That’s why they call it, the dummy copy. This, of course, is not the real copy for this entry. Rest assured, the words will expand the concept. With clarity. Conviction. And a little wit.</p>
+<p><?php /* translators: %1$s: opening <a> tag, %2$s: closing </a> tag, %3$s: double line break. */ printf( esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who %1$sneed some type%2$s to visualize what the actual copy might look like if it were real content.%3$sIf you want to read, I might suggest a good book, perhaps Hemingway or Melville. That’s why they call it, the dummy copy. This, of course, is not the real copy for this entry. Rest assured, the words will expand the concept. With clarity. Conviction. And a little wit.', 'inspiro-blocks' ), '<a href="#">', '</a>', '<br><br>' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -59,11 +59,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"align":"center","textColor":"primary"} -->
-<p class="has-text-align-center has-primary-color has-text-color">WHAT WE DO</p>
+<p class="has-text-align-center has-primary-color has-text-color"><?php echo esc_html__( 'WHAT WE DO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"max-48"} -->
-<h2 class="has-text-align-center has-max-48-font-size">Bring the world to <br>your solutions</h2>
+<h2 class="has-text-align-center has-max-48-font-size"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Bring the world to %syour solutions', 'inspiro-blocks' ), '<br>' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer -->
@@ -77,15 +77,15 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:heading -->
-<h2>Service 1</h2>
+<h2><?php echo esc_html__( 'Service 1', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -95,15 +95,15 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:heading -->
-<h2>Service 2</h2>
+<h2><?php echo esc_html__( 'Service 2', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -113,15 +113,15 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:heading -->
-<h2>Service 3</h2>
+<h2><?php echo esc_html__( 'Service 3', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -135,7 +135,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">Our Team</h2>
+<h2 class="has-max-48-font-size"><?php echo esc_html__( 'Our Team', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"47px"} -->
@@ -153,15 +153,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Cynthia Howery</h2>
+<h2><?php echo esc_html__( 'Cynthia Howery', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Co-Founder, Designer</p>
+<p><?php echo esc_html__( 'Co-Founder, Designer', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only","layout":{"type":"flex","flexWrap":"wrap"}} -->
@@ -177,15 +177,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Jimmy Banh</h2>
+<h2><?php echo esc_html__( 'Jimmy Banh', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Co-Founder, Lead Developer</p>
+<p><?php echo esc_html__( 'Co-Founder, Lead Developer', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only"} -->
@@ -201,15 +201,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Leah Palmieri</h2>
+<h2><?php echo esc_html__( 'Leah Palmieri', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Developer</p>
+<p><?php echo esc_html__( 'Developer', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only"} -->
@@ -231,15 +231,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Randy Phillips</h2>
+<h2><?php echo esc_html__( 'Randy Phillips', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CTO</p>
+<p><?php echo esc_html__( 'CTO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","className":"is-style-logos-only"} -->
@@ -253,15 +253,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Jennie Thompson</h2>
+<h2><?php echo esc_html__( 'Jennie Thompson', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CLCO</p>
+<p><?php echo esc_html__( 'CLCO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","className":"is-style-logos-only"} -->
@@ -275,15 +275,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Sharon Austin</h2>
+<h2><?php echo esc_html__( 'Sharon Austin', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CTO</p>
+<p><?php echo esc_html__( 'CTO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"currentColor","className":"is-style-logos-only"} -->
@@ -307,23 +307,23 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"align":"left","textColor":"primary"} -->
-<p class="has-text-align-left has-primary-color has-text-color">WHERE ARE WE LOCATED</p>
+<p class="has-text-align-left has-primary-color has-text-color"><?php echo esc_html__( 'WHERE ARE WE LOCATED', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"left","fontSize":"max-48"} -->
-<h2 class="has-text-align-left has-max-48-font-size">Our Location</h2>
+<h2 class="has-text-align-left has-max-48-font-size"><?php echo esc_html__( 'Our Location', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"2.5"}}} -->
-<p style="line-height:2.5">Amsterdam<br>Munich<br>Brussels<br>Hong Kong<br>Barcelona</p>
+<p style="line-height:2.5"><?php echo esc_html__( 'Amsterdam', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Munich', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Brussels', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Hong Kong', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Barcelona', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"2.5"}}} -->
-<p style="line-height:2.5">New York<br>Paris<br>San Francisco<br>Sydney<br>Tokyo</p>
+<p style="line-height:2.5"><?php echo esc_html__( 'New York', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Paris', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'San Francisco', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Sydney', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'Tokyo', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -347,18 +347,18 @@
 <!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","left":"0","bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"66.66%","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:heading -->
-<h2>Thinking about joining our team?</h2>
+<h2><?php echo esc_html__( 'Thinking about joining our team?', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Check out our open positions, or drop us a line, say hi.</p>
+<p><?php echo esc_html__( 'Check out our open positions, or drop us a line, say hi.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button">View Job Openings</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-background wp-element-button"><?php echo esc_html__( 'View Job Openings', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

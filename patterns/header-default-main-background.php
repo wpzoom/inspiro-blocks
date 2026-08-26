@@ -14,16 +14,16 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"max-48"} -->
-<h3 class="has-white-color has-text-color has-max-48-font-size">Why us?</h3>
+<h3 class="has-white-color has-text-color has-max-48-font-size"><?php echo esc_html__( 'Why us?', 'inspiro-blocks' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really <br>supposed to read this dummy copy.</p>
+<p><?php /* translators: %s: line break tag. */ printf( esc_html__( 'This is some dummy copy. You’re not really %ssupposed to read this dummy copy.', 'inspiro-blocks' ), '<br>' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"0px"},"typography":{"textTransform":"uppercase"}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link wp-element-button" style="border-radius:0px">Learn More</a></div>
+<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link wp-element-button" style="border-radius:0px"><?php echo esc_html__( 'Learn More', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 

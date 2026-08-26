@@ -8,18 +8,18 @@
 ?>
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2>Subscribe</h2>
+<h2><?php echo esc_html__( 'Subscribe', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sign up with your email address to receive our weekly news</p>
+<p><?php echo esc_html__( 'Sign up with your email address to receive our weekly news', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
 <form action="/action_page.php">
-    <input type="text" placeholder="Name" name="name" required="">
-    <input type="text" placeholder="Email address" name="mail" required="">
-    <input type="submit" value="Subscribe">
+    <input type="text" placeholder="<?php echo esc_attr__( 'Name', 'inspiro-blocks' ); ?>" name="name" required="">
+    <input type="text" placeholder="<?php echo esc_attr__( 'Email address', 'inspiro-blocks' ); ?>" name="mail" required="">
+    <input type="submit" value="<?php echo esc_attr__( 'Subscribe', 'inspiro-blocks' ); ?>">
 </form>
 <!-- /wp:html -->
 
@@ -34,7 +34,7 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2>Latest news</h2>
+<h2><?php echo esc_html__( 'Latest news', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:latest-posts /-->
@@ -50,7 +50,7 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2>Categories</h2>
+<h2><?php echo esc_html__( 'Categories', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:categories {"showPostCounts":true} /-->
@@ -66,10 +66,10 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2>Search</h2>
+<h2><?php echo esc_html__( 'Search', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Enter your keywords","buttonText":"Search"} /-->
+<!-- wp:search {"label":"<?php echo esc_attr__( 'Search', 'inspiro-blocks' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr__( 'Enter your keywords', 'inspiro-blocks' ); ?>","buttonText":"<?php echo esc_attr__( 'Search', 'inspiro-blocks' ); ?>"} /-->
 
 <!-- wp:separator {"style":{"color":{"background":"#6d6d784f"}},"className":"is-style-wide"} -->
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#6d6d784f;color:#6d6d784f"/>
