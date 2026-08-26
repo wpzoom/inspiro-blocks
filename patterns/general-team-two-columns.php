@@ -14,11 +14,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"primary"} -->
-<p class="has-primary-color has-text-color">OUR TEAM</p>
+<p class="has-primary-color has-text-color"><?php echo esc_html__( 'OUR TEAM', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">Meet the<br>Team</h2>
+<h2 class="has-max-48-font-size"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Meet the%sTeam', 'inspiro-blocks' ), '<br>' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"71px"} -->
@@ -36,15 +36,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Jimmy Banh</h2>
+<h2><?php echo esc_html__( 'Jimmy Banh', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Co-founder / CEO</p>
+<p><?php echo esc_html__( 'Co-founder / CEO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->
@@ -58,15 +58,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Cynthia Howery</h2>
+<h2><?php echo esc_html__( 'Cynthia Howery', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CCO</p>
+<p><?php echo esc_html__( 'CCO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->
@@ -80,15 +80,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Leah Palmieri</h2>
+<h2><?php echo esc_html__( 'Leah Palmieri', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CFO</p>
+<p><?php echo esc_html__( 'CFO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->
@@ -108,15 +108,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Randy Phillips</h2>
+<h2><?php echo esc_html__( 'Randy Phillips', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>COO</p>
+<p><?php echo esc_html__( 'COO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->
@@ -130,15 +130,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Jennie Thompson</h2>
+<h2><?php echo esc_html__( 'Jennie Thompson', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CLCO</p>
+<p><?php echo esc_html__( 'CLCO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->
@@ -152,15 +152,15 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2>Sharon Austin</h2>
+<h2><?php echo esc_html__( 'Sharon Austin', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>CTO</p>
+<p><?php echo esc_html__( 'CTO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"lightgrey","iconColorValue":"#6C6C77","className":"is-style-logos-only"} -->

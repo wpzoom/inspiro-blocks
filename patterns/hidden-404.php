@@ -11,4 +11,4 @@
 <!-- wp:paragraph -->
 <p><?php echo esc_html__( 'Oops, the page you are looking for does not exist or is no longer available. Everything is still awesome. Just use the search form to find your way.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
-<!-- wp:search {"width":75,"widthUnit":"%","showLabel":false,"buttonText":"Search"} /-->
+<!-- wp:search {"width":75,"widthUnit":"%","showLabel":false,"buttonText":"<?php echo esc_attr__( 'Search', 'inspiro-blocks' ); ?>"} /-->

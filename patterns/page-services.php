@@ -16,7 +16,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":1,"textColor":"white","fontSize":"max-48"} -->
-<h1 class="has-white-color has-text-color has-max-48-font-size">Services</h1>
+<h1 class="has-white-color has-text-color has-max-48-font-size"><?php echo esc_html__( 'Services', 'inspiro-blocks' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"63px"} -->
@@ -32,15 +32,15 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"align":"left","style":{"typography":{"letterSpacing":"1px"}},"textColor":"primary"} -->
-<p class="has-text-align-left has-primary-color has-text-color" style="letter-spacing:1px">LET'S WORK TOGETHER!</p>
+<p class="has-text-align-left has-primary-color has-text-color" style="letter-spacing:1px"><?php echo esc_html__( 'LET\'S WORK TOGETHER!', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"left","fontSize":"max-48"} -->
-<h2 class="has-text-align-left has-max-48-font-size">Our Services</h2>
+<h2 class="has-text-align-left has-max-48-font-size"><?php echo esc_html__( 'Our Services', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left"} -->
-<p class="has-text-align-left">Inspiro is the perfect solution to create a beautiful website for your portfolio or your business. If you’re looking to create a captivating presence online, then you’ve found the right tool. The theme is easy to manage, with a drag-and-drop interface and fully customizable using the Theme Customizer.</p>
+<p class="has-text-align-left"><?php echo esc_html__( 'Inspiro is the perfect solution to create a beautiful website for your portfolio or your business. If you’re looking to create a captivating presence online, then you’ve found the right tool. The theme is easy to manage, with a drag-and-drop interface and fully customizable using the Theme Customizer.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"46px"} -->
@@ -51,11 +51,11 @@
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_356BERTH29.jpg","id":7392,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7392" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_356BERTH29.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Video<br>Production</h3>
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Video%sProduction', 'inspiro-blocks' ), '<br>' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#">Explore more →</a></p>
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#"><?php echo esc_html__( 'Explore more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
@@ -63,11 +63,11 @@
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_KV0WLH355C.jpg","id":7394,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7394" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_KV0WLH355C.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Professional<br>Editing</h3>
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Professional%sEditing', 'inspiro-blocks' ), '<br>' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#">Explore more →</a></p>
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#"><?php echo esc_html__( 'Explore more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
@@ -75,11 +75,11 @@
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_P9QYJ8AAL8.jpg","id":7497,"dimRatio":70,"overlayColor":"secondary","contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-7497" alt="" src="<?php echo esc_url( get_theme_file_uri() ) . '/assets/images/'; ?>StockSnap_P9QYJ8AAL8.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}},"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Aerial<br>Video</h3>
+<h3 class="has-white-color has-text-color has-max-36-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Aerial%sVideo', 'inspiro-blocks' ), '<br>' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"left":"0","top":"0","right":"0","bottom":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#">Explore more →</a></p>
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="#"><?php echo esc_html__( 'Explore more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column --></div>
@@ -98,16 +98,16 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"max-48"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-max-48-font-size">Why us?</h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-max-48-font-size"><?php echo esc_html__( 'Why us?', 'inspiro-blocks' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color">This is some dummy copy. You’re not really <br>supposed to read this dummy copy.</p>
+<p class="has-white-color has-text-color"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'This is some dummy copy. You’re not really %ssupposed to read this dummy copy.', 'inspiro-blocks' ), '<br>' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"border":{"radius":"0px"},"typography":{"textTransform":"uppercase"}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link has-white-color has-text-color wp-element-button" style="border-radius:0px">Learn More</a></div>
+<div class="wp-block-button is-style-outline" style="text-transform:uppercase"><a class="wp-block-button__link has-white-color has-text-color wp-element-button" style="border-radius:0px"><?php echo esc_html__( 'Learn More', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -124,7 +124,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textColor":"white","fontSize":"max-48"} -->
-<h2 class="has-white-color has-text-color has-max-48-font-size">Showreel</h2>
+<h2 class="has-white-color has-text-color has-max-48-font-size"><?php echo esc_html__( 'Showreel', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -147,11 +147,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"primary"} -->
-<p class="has-primary-color has-text-color">HOW WE WORK</p>
+<p class="has-primary-color has-text-color"><?php echo esc_html__( 'HOW WE WORK', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">Let's work together!</h2>
+<h2 class="has-max-48-font-size"><?php echo esc_html__( 'Let\'s work together!', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"63px"} -->
@@ -175,15 +175,15 @@
 <!-- /wp:cover -->
 
 <!-- wp:heading -->
-<h2>Planning</h2>
+<h2><?php echo esc_html__( 'Planning', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -203,15 +203,15 @@
 <!-- /wp:cover -->
 
 <!-- wp:heading -->
-<h2>Shooting</h2>
+<h2><?php echo esc_html__( 'Shooting', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -231,15 +231,15 @@
 <!-- /wp:cover -->
 
 <!-- wp:heading -->
-<h2>Editing</h2>
+<h2><?php echo esc_html__( 'Editing', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -253,11 +253,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"primary"} -->
-<p class="has-primary-color has-text-color">TESTIMONIALS</p>
+<p class="has-primary-color has-text-color"><?php echo esc_html__( 'TESTIMONIALS', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">What people say<br>about us</h2>
+<h2 class="has-max-48-font-size"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'What people say%sabout us', 'inspiro-blocks' ), '<br>' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"73px"} -->
@@ -267,7 +267,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}},"border":{"width":"0px","style":"none"}},"backgroundColor":"light-background","className":"is-style-shadow"} -->
 <div class="wp-block-column is-style-shadow has-light-background-background-color has-background" style="border-style:none;border-width:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px"><!-- wp:paragraph -->
-<p>"Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam."</p>
+<p><?php echo esc_html__( '"Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam."', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -276,14 +276,14 @@
 <!-- /wp:image -->
 
 <!-- wp:pullquote {"textAlign":"left","style":{"border":{"width":"0px","style":"none"}},"textColor":"foreground"} -->
-<figure class="wp-block-pullquote has-text-align-left has-foreground-color has-text-color" style="border-style:none;border-width:0px"><blockquote><p><strong>Eva Lester</strong></p><cite>Senior Supervisors ・ Fables</cite></blockquote></figure>
+<figure class="wp-block-pullquote has-text-align-left has-foreground-color has-text-color" style="border-style:none;border-width:0px"><blockquote><p><strong><?php echo esc_html__( 'Eva Lester', 'inspiro-blocks' ); ?></strong></p><cite><?php echo esc_html__( 'Senior Supervisors ・ Fables', 'inspiro-blocks' ); ?></cite></blockquote></figure>
 <!-- /wp:pullquote --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}},"border":{"width":"0px","style":"none"}},"backgroundColor":"light-background","className":"is-style-shadow"} -->
 <div class="wp-block-column is-style-shadow has-light-background-background-color has-background" style="border-style:none;border-width:0px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px"><!-- wp:paragraph -->
-<p>"Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam."</p>
+<p><?php echo esc_html__( '"Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam."', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -292,7 +292,7 @@
 <!-- /wp:image -->
 
 <!-- wp:pullquote {"textAlign":"left","style":{"border":{"width":"0px","style":"none"}},"textColor":"foreground"} -->
-<figure class="wp-block-pullquote has-text-align-left has-foreground-color has-text-color" style="border-style:none;border-width:0px"><blockquote><p><strong>James Richardson</strong></p><cite>Environmental Economist</cite></blockquote></figure>
+<figure class="wp-block-pullquote has-text-align-left has-foreground-color has-text-color" style="border-style:none;border-width:0px"><blockquote><p><strong><?php echo esc_html__( 'James Richardson', 'inspiro-blocks' ); ?></strong></p><cite><?php echo esc_html__( 'Environmental Economist', 'inspiro-blocks' ); ?></cite></blockquote></figure>
 <!-- /wp:pullquote --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

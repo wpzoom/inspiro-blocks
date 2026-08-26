@@ -12,7 +12,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"className":"has-text-align-left has-x-large-font-size"} -->
-<h2 class="has-text-align-left has-x-large-font-size" id="pricing-table">Pricing Table</h2>
+<h2 class="has-text-align-left has-x-large-font-size" id="pricing-table"><?php echo esc_html__( 'Pricing Table', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -27,7 +27,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"left","level":3,"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size">Starter </h3>
+<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size"><?php echo esc_html__( 'Starter', 'inspiro-blocks' ); ?> </h3>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"textAlign":"left","level":4,"textColor":"primary"} -->
@@ -39,7 +39,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color">This is some dummy copy. You’re not really supposed to read this dummy copy.</p>
+<p class="has-white-color has-text-color"><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -54,7 +54,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 1</p>
+<p><?php echo esc_html__( 'Feature no. 1', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -64,7 +64,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 2</p>
+<p><?php echo esc_html__( 'Feature no. 2', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -74,7 +74,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 3</p>
+<p><?php echo esc_html__( 'Feature no. 3', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -84,7 +84,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 4</p>
+<p><?php echo esc_html__( 'Feature no. 4', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -94,7 +94,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 5</p>
+<p><?php echo esc_html__( 'Feature no. 5', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -104,7 +104,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 6</p>
+<p><?php echo esc_html__( 'Feature no. 6', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -114,13 +114,13 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 7</p>
+<p><?php echo esc_html__( 'Feature no. 7', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
 <div class="wp-block-buttons" style="margin-top:40px"><!-- wp:button {"width":100,"style":{"border":{"radius":"5px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px">Sign Up Now</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px"><?php echo esc_html__( 'Sign Up Now', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -133,7 +133,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"left","level":3,"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size">Professional </h3>
+<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size"><?php echo esc_html__( 'Professional', 'inspiro-blocks' ); ?> </h3>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"textAlign":"left","level":4,"textColor":"secondary"} -->
@@ -145,7 +145,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p>This is some dummy copy. You’re not really supposed to read this dummy copy.</p>
+<p><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -160,7 +160,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 1</p>
+<p><?php echo esc_html__( 'Feature no. 1', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -170,7 +170,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 2</p>
+<p><?php echo esc_html__( 'Feature no. 2', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -180,7 +180,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 3</p>
+<p><?php echo esc_html__( 'Feature no. 3', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -190,7 +190,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 4</p>
+<p><?php echo esc_html__( 'Feature no. 4', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -200,7 +200,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 5</p>
+<p><?php echo esc_html__( 'Feature no. 5', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -210,7 +210,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 6</p>
+<p><?php echo esc_html__( 'Feature no. 6', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -220,13 +220,13 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 7</p>
+<p><?php echo esc_html__( 'Feature no. 7', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
 <div class="wp-block-buttons" style="margin-top:40px"><!-- wp:button {"width":100,"style":{"border":{"radius":"5px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px">Sign Up Now</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px"><?php echo esc_html__( 'Sign Up Now', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -239,7 +239,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"left","level":3,"textColor":"white","fontSize":"max-36"} -->
-<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size">Agency </h3>
+<h3 class="has-text-align-left has-white-color has-text-color has-max-36-font-size"><?php echo esc_html__( 'Agency', 'inspiro-blocks' ); ?> </h3>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"textAlign":"left","level":4,"textColor":"primary"} -->
@@ -251,7 +251,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color">This is some dummy copy. You’re not really supposed to read this dummy copy.</p>
+<p class="has-white-color has-text-color"><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -266,7 +266,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 1</p>
+<p><?php echo esc_html__( 'Feature no. 1', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -276,7 +276,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 2</p>
+<p><?php echo esc_html__( 'Feature no. 2', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -286,7 +286,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 3</p>
+<p><?php echo esc_html__( 'Feature no. 3', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -296,7 +296,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 4</p>
+<p><?php echo esc_html__( 'Feature no. 4', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -306,7 +306,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 5</p>
+<p><?php echo esc_html__( 'Feature no. 5', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -316,7 +316,7 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 6</p>
+<p><?php echo esc_html__( 'Feature no. 6', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -326,13 +326,13 @@
 <!-- /wp:outermost/icon-block -->
 
 <!-- wp:paragraph -->
-<p>Feature no. 7</p>
+<p><?php echo esc_html__( 'Feature no. 7', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
 <div class="wp-block-buttons" style="margin-top:40px"><!-- wp:button {"width":100,"style":{"border":{"radius":"5px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px">Sign Up Now</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" style="border-radius:5px"><?php echo esc_html__( 'Sign Up Now', 'inspiro-blocks' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

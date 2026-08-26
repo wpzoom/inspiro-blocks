@@ -11,31 +11,31 @@
 <div class="wp-block-group alignfull is-style-default has-white-color has-header-footer-background-color has-text-color has-background has-link-color has-small-font-size" style="margin-top:0px;padding-top:40px;padding-bottom:40px"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"textColor":"white"} -->
-<h2 class="has-white-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--50)">Inspiro</h2>
+<h2 class="has-white-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--50)"><?php echo esc_html__( 'Inspiro', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color">This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content.</p>
+<p class="has-tertiary-color has-text-color"><?php echo esc_html__( 'This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"textColor":"white","fontSize":"small"} -->
-<h3 class="has-white-color has-text-color has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--50)">Our Address</h3>
+<h3 class="has-white-color has-text-color has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--50)"><?php echo esc_html__( 'Our Address', 'inspiro-blocks' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color has-link-color">146 W 29th St,<br>New York,<br>NY 10011<br><a href="#">Contact us</a></p>
+<p class="has-tertiary-color has-text-color has-link-color"><?php echo esc_html__( '146 W 29th St,', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'New York,', 'inspiro-blocks' ); ?><br><?php echo esc_html__( 'NY 10011', 'inspiro-blocks' ); ?><br><a href="#"><?php echo esc_html__( 'Contact us', 'inspiro-blocks' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"textColor":"white"} -->
-<h2 class="has-white-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--50)">Follow us</h2>
+<h2 class="has-white-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--50)"><?php echo esc_html__( 'Follow us', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color">Let's stay in touch!</p>
+<p class="has-tertiary-color has-text-color"><?php echo esc_html__( 'Let\'s stay in touch!', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","style":{"spacing":{"blockGap":{"top":"3px","left":"19px"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
@@ -56,11 +56,11 @@
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color">Copyright © <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php echo get_bloginfo( 'name' ); ?></p>
+<p class="has-tertiary-color has-text-color"><?php echo esc_html__( 'Copyright ©', 'inspiro-blocks' ); ?> <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php echo get_bloginfo( 'name' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color">Powered by WordPress. Designed by <a href="https://www.wpzoom.com" data-type="URL" data-id="https://www.wpzoom.com" target="_blank" rel="noreferrer noopener">WPZOOM</a></p>
+<p class="has-tertiary-color has-text-color"><?php echo esc_html__( 'Powered by WordPress. Designed by', 'inspiro-blocks' ); ?> <a href="https://www.wpzoom.com" data-type="URL" data-id="https://www.wpzoom.com" target="_blank" rel="noreferrer noopener">WPZOOM</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

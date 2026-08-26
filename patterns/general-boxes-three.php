@@ -13,11 +13,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"primary"} -->
-<p class="has-primary-color has-text-color">WHAT WE DO</p>
+<p class="has-primary-color has-text-color"><?php echo esc_html__( 'WHAT WE DO', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"max-48"} -->
-<h2 class="has-max-48-font-size">Bring the world to <br>your solutions</h2>
+<h2 class="has-max-48-font-size"><?php /* translators: %s: line break tag. */ printf( esc_html__( 'Bring the world to %syour solutions', 'inspiro-blocks' ), '<br>' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer -->
@@ -33,15 +33,15 @@
 <!-- /wp:html -->
 
 <!-- wp:heading -->
-<h2>Service 1</h2>
+<h2><?php echo esc_html__( 'Service 1', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -53,15 +53,15 @@
 <!-- /wp:html -->
 
 <!-- wp:heading -->
-<h2>Service 2</h2>
+<h2><?php echo esc_html__( 'Service 2', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -73,15 +73,15 @@
 <!-- /wp:html -->
 
 <!-- wp:heading -->
-<h2>Service 3</h2>
+<h2><?php echo esc_html__( 'Service 3', 'inspiro-blocks' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><?php echo esc_html__( 'Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.', 'inspiro-blocks' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Learn more →</a></p>
+<p><a href="#"><?php echo esc_html__( 'Learn more', 'inspiro-blocks' ); ?> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
