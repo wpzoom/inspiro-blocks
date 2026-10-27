@@ -14,6 +14,7 @@ Inspiro Blocks is a Block theme that is fully compatible with the new Full Site 
 == Changelog ==
 
 = 1.1.5 =
+* Mobile menu: restored the theme's overlay colors (WordPress 7.1 started painting the open mobile menu white with white links); submenus now collapse into an accordion (tap the arrow to expand; the current page's branch opens automatically) and use the same font size as the top-level items
 * Improved translation support
 
 = 1.1.4 =

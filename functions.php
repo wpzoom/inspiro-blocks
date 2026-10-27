@@ -73,6 +73,9 @@ function inspiro_blocks_enqueue_style_sheet() {
 
 	wp_enqueue_style( 'inspiro-blocks', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
+	// Collapsible submenus in the mobile overlay menu (see assets/js/navigation.js).
+	wp_enqueue_script( 'inspiro-blocks-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), wp_get_theme()->get( 'Version' ), true );
+
 }
 
 /**
