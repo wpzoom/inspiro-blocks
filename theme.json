@@ -309,6 +309,11 @@
                     "name": "Montserrat"
                 },
                 {
+                    "fontFamily": "Onest, sans-serif",
+                    "slug": "onest",
+                    "name": "Onest"
+                },
+                {
                   "fontFamily": "Mulish, sans-serif",
                   "name": "Mulish",
                   "slug": "mulish"
@@ -492,7 +497,7 @@
                     "fontStyle":"normal",
                     "letterSpacing":"1px",
                     "fontWeight": "var(--wp--custom--font-weight--semi-bold)",
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)"
+                    "fontFamily": "var(--wp--preset--font-family--onest)"
                 }
             },
             "core/buttons": {
@@ -632,7 +637,7 @@
                 "typography": {
                     "fontSize": "var(--wp--preset--font-size--small)",
                     "fontWeight": "var(--wp--custom--font-weight--medium)",
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)"
+                    "fontFamily": "var(--wp--preset--font-family--onest)"
                 }
             },
             "core/paragraph": {
@@ -736,7 +741,7 @@
                     "letterSpacing":"1px",
                     "fontSize":"13px",
                     "fontWeight": "var(--wp--custom--font-weight--semi-bold)",
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)"
+                    "fontFamily": "var(--wp--preset--font-family--onest)"
                 }
             },
             "core/separator": {
@@ -766,7 +771,9 @@
                     "fontSize": "var(--wp--preset--font-size--large)",
                     "lineHeight": "var(--wp--custom--line-height--one)",
                     "fontWeight": "var(--wp--custom--font-weight--bold)",
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)"
+                    "textTransform": "uppercase",
+                    "letterSpacing": "0.5px",
+                    "fontFamily": "var(--wp--preset--font-family--onest)"
 
                 }
             },

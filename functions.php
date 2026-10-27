@@ -303,6 +303,7 @@ function inspiro_blocks_get_fonts_url( $all = false ) {
 	//Set default theme typography font families
 	$theme_default_typo = array(
 		'inter',
+		'onest',
 		'montserrat',
 		'bitter',
 		'raleway',
@@ -337,6 +338,7 @@ function inspiro_blocks_get_fonts_url( $all = false ) {
         'manrope'            => 'Manrope:wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800',
         'merriweather'       => 'Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900',
         'montserrat'         => 'Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+        'onest'              => 'Onest:wght@100;200;300;400;500;600;700;800;900',
         'mulish'             => 'Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000',
         'nunito'             => 'Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000',
         'open-sans'          => 'Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800',
