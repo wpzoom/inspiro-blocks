@@ -24,6 +24,7 @@ require INSPIRO_THEME_DIR . 'inc/classes/class-inspiro-enqueue-scripts.php';
  */
 if ( is_admin() ) {
     require INSPIRO_THEME_DIR . 'inc/admin-notice.php';
+    require INSPIRO_THEME_DIR . 'inc/premium-starter-sites.php';
     require INSPIRO_THEME_DIR . 'inc/theme-info-page.php';
 
     if ( current_user_can( 'manage_options' ) ) {

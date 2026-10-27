@@ -48,6 +48,38 @@ function inspiro_display_theme_page() {
               $( "#tabs" ).tabs();
             } );
 
+            // "Browse starter sites" link in the comparison table switches to the Demos tab.
+            $( '.inspiro-blocks-goto-demos' ).on( 'click', function( e ) {
+                e.preventDefault();
+                $( '.wpz-onboard_tabs a[href="#demos"]' ).trigger( 'click' );
+                $( 'html, body' ).animate( { scrollTop: $( '#inspiro-premium-starter-sites' ).offset().top - 40 }, 300 );
+            } );
+
+            // Filter Inspiro Premium starter sites by page builder.
+            $( '.inspiro-blocks-starter-sites-filters .button' ).on( 'click', function() {
+                var $button  = $( this ),
+                    filter   = $button.data( 'filter' ),
+                    $wrap    = $button.closest( '.inspiro-blocks-starter-sites' ),
+                    $sites   = $wrap.find( '.inspiro-blocks-starter-site' ),
+                    $empty   = $wrap.find( '.inspiro-blocks-starter-sites-empty' ),
+                    visible  = 0;
+
+                $button.siblings().removeClass( 'is-active' ).attr( 'aria-pressed', 'false' );
+                $button.addClass( 'is-active' ).attr( 'aria-pressed', 'true' );
+
+                $sites.each( function() {
+                    var $site = $( this ),
+                        show  = ( '*' === filter ) || $site.hasClass( filter );
+
+                    $site.toggleClass( 'is-hidden', ! show );
+                    if ( show ) {
+                        visible++;
+                    }
+                } );
+
+                $empty.prop( 'hidden', visible > 0 );
+            } );
+
       });
 
       </script>
@@ -217,16 +249,16 @@ function inspiro_display_theme_page() {
 
                                             <div class="wpz-grid-wrap">
 
-                                                <div class="section premium-feature coming-soon">
+                                                <div class="section premium-feature">
                                                     <h4><svg height="24" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 1069 1069" width="24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="1066.67" id="Video-player" style="fill:none;" width="1066.67" x="1.515" y="0.143"/><g><path d="M653.802,660.183c9.682,-5.579 15.648,-15.903 15.648,-27.077c0,-11.174 -5.966,-21.498 -15.648,-27.077c-0,0 -207.519,-119.571 -207.519,-119.571c-9.669,-5.571 -21.576,-5.563 -31.238,0.021c-9.662,5.584 -15.613,15.897 -15.613,27.056c-0,0 -0,239.142 -0,239.142c-0,11.159 5.951,21.472 15.613,27.056c9.662,5.584 21.569,5.592 31.238,0.021c0,-0 207.519,-119.571 207.519,-119.571Zm-78.196,-27.077l-113.674,65.498c-0,0.001 -0,-130.996 -0,-130.996l113.674,65.498Z" style="fill-opacity:0.5;"/><path d="M45.265,325.143l-0,458.333c-0,52.49 20.852,102.831 57.968,139.948c37.117,37.117 87.458,57.969 139.949,57.969c165.508,-0 417.825,-0 583.333,-0c52.491,-0 102.832,-20.852 139.948,-57.969c37.117,-37.117 57.969,-87.458 57.969,-139.948l-0,-458.333c-0,-52.49 -20.852,-102.831 -57.969,-139.948c-37.116,-37.117 -87.457,-57.969 -139.948,-57.969c-165.508,0 -417.825,0 -583.333,0c-52.491,0 -102.832,20.852 -139.949,57.969c-37.116,37.117 -57.968,87.458 -57.968,139.948Zm62.5,56.213l-0,402.12c-0,35.915 14.267,70.358 39.662,95.754c25.396,25.396 59.84,39.663 95.755,39.663c165.508,-0 417.825,-0 583.333,-0c35.915,-0 70.359,-14.267 95.754,-39.663c25.396,-25.396 39.663,-59.839 39.663,-95.754l-0,-458.333c-0,-35.915 -14.267,-70.358 -39.663,-95.754c-25.395,-25.396 -59.839,-39.663 -95.754,-39.663c-165.508,0 -417.825,0 -583.333,0c-35.915,0 -70.359,14.267 -95.755,39.663c-23.909,23.91 -37.955,55.84 -39.516,89.467l676.937,0c17.248,0 31.25,14.003 31.25,31.25c0,17.248 -14.002,31.25 -31.25,31.25l-677.083,0Zm123.177,-160.38c18.253,0 33.073,14.82 33.073,33.073c-0,18.254 -14.82,33.074 -33.073,33.074c-18.254,-0 -33.074,-14.82 -33.074,-33.074c0,-18.253 14.82,-33.073 33.074,-33.073Zm104.166,0c18.254,0 33.074,14.82 33.074,33.073c-0,18.254 -14.82,33.074 -33.074,33.074c-18.253,-0 -33.073,-14.82 -33.073,-33.074c0,-18.253 14.82,-33.073 33.073,-33.073Zm104.167,0c18.254,0 33.073,14.82 33.073,33.073c0,18.254 -14.819,33.074 -33.073,33.074c-18.254,-0 -33.073,-14.82 -33.073,-33.074c-0,-18.253 14.819,-33.073 33.073,-33.073Z"/></g></svg> <?php esc_html_e( 'YouTube & Vimeo Video Backgrounds', 'inspiro-blocks' ); ?>
                                                     </h4>
                                                     <p class="about">
-                                                        <?php esc_html_e( 'In the free version, you can display only an image or self-hosted video in the background of the cover block, while in the PRO version, you will soon be able to display YouTube & Vimeo videos.', 'inspiro-blocks' ); ?>
+                                                        <?php esc_html_e( 'In the free version, the Cover block can only use an image or a self-hosted video as its background. In the PRO version, you can simply paste a YouTube or Vimeo link and play it as a full-width video background.', 'inspiro-blocks' ); ?>
                                                     </p>
                                                     <p class="section_footer">
 
-                                                        <a href="#" class="button button-secondary">
-                                                            <?php esc_html_e( 'Coming Soon', 'inspiro-blocks' ); ?>
+                                                        <a href="<?php echo esc_url( __( 'https://demo.wpzoom.com/inspiro-blocks-pro-video/', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-primary">
+                                                            <?php esc_html_e( 'Video Background Demo &rarr;', 'inspiro-blocks' ); ?>
                                                         </a>
                                                     </p>
                                                 </div>
@@ -304,10 +336,14 @@ function inspiro_display_theme_page() {
                             <div id="vs-pro" class="wpz-onboard_content-main-tab">
 
                                 <div class="theme-info-wrap">
-                                <h3 class="wpz-onboard_content-main-title"><?php esc_html_e( 'Inspiro Blocks Lite vs. Inspiro Blocks PRO', 'inspiro-blocks' ); ?></h3>
-                                <p class="wpz-onboard_content-main-intro"><?php esc_html_e( 'Below is a comparison chart of the free and the premium versions.', 'inspiro-blocks' ); ?></p>
+                                <?php
+                                $inspiro_blocks_premium_sites_count = function_exists( 'inspiro_blocks_get_premium_starter_sites' ) ? count( inspiro_blocks_get_premium_starter_sites() ) : 0;
+                                $inspiro_blocks_premium_sites_label = $inspiro_blocks_premium_sites_count >= 50 ? number_format_i18n( $inspiro_blocks_premium_sites_count ) : '50+';
+                                ?>
+                                <h3 class="wpz-onboard_content-main-title"><?php esc_html_e( 'Inspiro Blocks Lite vs. Inspiro Blocks PRO vs. Inspiro Premium', 'inspiro-blocks' ); ?></h3>
+                                <p class="wpz-onboard_content-main-intro"><?php esc_html_e( 'Below is a comparison chart of the free and the premium versions. Inspiro Blocks PRO is the direct upgrade of this block theme. Inspiro Premium is our flagship theme: a classic theme with 50+ starter sites for the Block Editor and Elementor, a header & footer builder, and advanced video and portfolio features.', 'inspiro-blocks' ); ?></p>
 
-                                <div class="theme-comparison">
+                                <div class="theme-comparison has-premium-column">
 
                                             <table>
                                                 <thead class="theme-comparison-header">
@@ -315,6 +351,7 @@ function inspiro_display_theme_page() {
                                                         <th class="table-feature-title"><h3><?php esc_html_e( 'Feature', 'inspiro-blocks' ); ?></h3></th>
                                                         <th><h3><?php esc_html_e( 'Inspiro Blocks Lite', 'inspiro-blocks' ); ?></h3></th>
                                                         <th><h3><?php esc_html_e( 'Inspiro Blocks PRO', 'inspiro-blocks' ); ?></h3></th>
+                                                        <th class="table-premium-column"><h3><?php esc_html_e( 'Inspiro Premium', 'inspiro-blocks' ); ?> <span class="table-new-promo"><?php esc_html_e( 'FLAGSHIP', 'inspiro-blocks' ); ?></span></h3></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -322,72 +359,86 @@ function inspiro_display_theme_page() {
                                                         <td><h3><?php esc_html_e( 'Responsive Layout', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Site Editor Support', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><em><?php esc_html_e( 'Customizer & Header/Footer Builder', 'inspiro-blocks' ); ?></em></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Block Patterns', 'inspiro-blocks' ); ?></h3></td>
                                                         <td>20</td>
                                                         <td>40+</td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Advanced WooCommerce Integration', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Demo Content Importer', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
 
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Starter Sites', 'inspiro-blocks' ); ?></h3></td>
                                                         <td>1</td>
                                                         <td>3</td>
+                                                                                                            <td><strong><?php echo esc_html( $inspiro_blocks_premium_sites_label ); ?></strong></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><strong><?php esc_html_e( 'Portfolio with Video Integration', 'inspiro-blocks' ); ?></strong> <span class="table-new-promo"><?php esc_html_e( 'POPULAR FEATURE', 'inspiro-blocks' ); ?></span></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><h3><?php esc_html_e( 'YouTube & Vimeo Backgrounds', 'inspiro-blocks' ); ?></h3></td>
+                                                        <td><h3><?php esc_html_e( 'YouTube & Vimeo Backgrounds in Cover Block', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
-                                                        <td><em><?php esc_html_e( 'Coming Soon', 'inspiro-blocks' ); ?></em></td>
+                                                        <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><strong><?php esc_html_e( 'Video Background on Hover', 'inspiro-blocks' ); ?></strong> <span class="table-new-promo"><?php esc_html_e( 'POPULAR FEATURE', 'inspiro-blocks' ); ?></span></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Video & Image Lightbox for Portfolio Posts', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Theme Options', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-no-alt"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Google Fonts (Hosted Locally)', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Typography Options', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><?php esc_html_e( 'Limited', 'inspiro-blocks' ); ?></td>
                                                         <td><span class="dashicons dashicons-saved"></span></td>
+                                                                                                            <td><span class="dashicons dashicons-saved"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td><h3><?php esc_html_e( 'Support', 'inspiro-blocks' ); ?></h3></td>
                                                         <td><?php esc_html_e( 'Support Forum', 'inspiro-blocks' ); ?></td>
                                                         <td><?php esc_html_e( 'Fast Email Support', 'inspiro-blocks' ); ?></td>
+                                                                                                            <td><?php esc_html_e( 'Fast Email Support', 'inspiro-blocks' ); ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td></td>
@@ -396,6 +447,12 @@ function inspiro_display_theme_page() {
                                                             <a href="https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free" target="_blank" class="button button-primary">
                                                                 <?php esc_html_e( 'Get Inspiro Blocks PRO Today!', 'inspiro-blocks' ); ?>
                                                             </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://www.wpzoom.com/themes/inspiro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-vs-pro" target="_blank" class="button button-primary">
+                                                                <?php esc_html_e( 'Get Inspiro Premium', 'inspiro-blocks' ); ?>
+                                                            </a>
+                                                            <a href="#demos" class="inspiro-blocks-goto-demos"><?php esc_html_e( 'Browse starter sites', 'inspiro-blocks' ); ?></a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -474,6 +531,93 @@ function inspiro_display_theme_page() {
                                     <a href="<?php echo esc_url( __( 'https://www.wpzoom.com/themes/inspiro-blocks-pro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-about-free', 'inspiro-blocks' ) ); ?>" target="_blank" class="button button-large button-primary">
                                         <?php esc_html_e( 'Get Inspiro Blocks PRO Today &rarr;', 'inspiro-blocks' ); ?>
                                     </a>
+
+                                    <?php
+                                    $inspiro_blocks_starter_sites = function_exists( 'inspiro_blocks_get_premium_starter_sites' ) ? inspiro_blocks_get_premium_starter_sites() : array();
+                                    if ( ! empty( $inspiro_blocks_starter_sites ) ) :
+                                        $inspiro_blocks_starter_sites_count = count( $inspiro_blocks_starter_sites );
+
+                                        $inspiro_blocks_elementor_icon = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.99998C0 13.9703 4.0297 18 8.99997 18C13.9703 18 18 13.9703 18 8.99998C18 4.0297 13.9703 0 8.99997 0C4.0297 0 0 4.0297 0 8.99998ZM6.74964 5.2499H5.24987V12.7501H6.74964V5.2499ZM8.24943 5.2499H12.7488V6.74967H8.24943V5.2499ZM12.7488 8.24944H8.24943V9.74922H12.7488V8.24944ZM8.24943 11.2503H12.7488V12.7501H8.24943V11.2503Z" fill="#92123A"/></svg>';
+                                        $inspiro_blocks_gutenberg_icon = '<svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28ZM20.7598 11.7135C20.5168 11.5354 20.1841 11.6073 20.0192 11.873C19.053 13.4452 17.0019 13.5296 16.8948 13.5296H16.8456C14.3172 13.5296 13.351 15.8614 13.3134 15.9551C13.1977 16.2489 13.322 16.5865 13.5853 16.7147C13.6547 16.7459 13.7328 16.7678 13.7994 16.7678C14.0048 16.7678 14.1986 16.6428 14.2883 16.4209C14.297 16.399 14.9623 14.7955 16.6692 14.6923V17.6774C16.5997 18.3213 16.3191 18.8276 15.8187 19.2058C15.3008 19.5966 14.6094 19.7966 13.7589 19.7966C12.7435 19.7966 11.9132 19.4184 11.2999 18.6682C10.675 17.9181 10.3626 16.8553 10.3626 15.4831L10.3713 12.1918C10.4204 10.979 10.7213 10.0194 11.2999 9.3349C11.9248 8.58473 12.7435 8.20652 13.7589 8.20652C14.6094 8.20652 15.3008 8.40656 15.8187 8.79728C16.3365 9.18799 16.6287 9.72561 16.6779 10.4226V10.4977C16.6779 10.8977 16.9816 11.2259 17.3519 11.2259C17.7222 11.2259 18.026 10.8977 18.026 10.4977V10.4226C17.9276 9.37865 17.4879 8.5566 16.6981 7.93458C15.9083 7.30632 14.9247 7 13.7328 7C12.3182 7 11.1755 7.50636 10.3076 8.50659C9.48891 9.44429 9.05786 10.6789 9.00868 12.198C9.00868 12.2512 9.00651 12.3035 9.00434 12.3559C9.00217 12.4082 9 12.4606 9 12.5137L9.00868 15.4769H9C9 17.1523 9.43973 18.4932 10.3076 19.4934C11.1755 20.4936 12.3182 21 13.7328 21C14.9247 21 15.9083 20.6937 16.701 20.0717C17.4242 19.5028 17.8524 18.7526 17.9999 17.8243L18.0289 14.5142C18.917 14.2829 20.1262 13.7546 20.89 12.5106C21.0809 12.2512 21.0144 11.8917 20.7598 11.7135Z" fill="#242628"/></svg>';
+                                    ?>
+
+                                    <div class="inspiro-blocks-starter-sites" id="inspiro-premium-starter-sites">
+
+                                        <h3 class="wpz-onboard_content-main-title">
+                                            <?php
+                                            printf(
+                                                /* translators: %s: number of starter sites */
+                                                esc_html__( 'Inspiro Premium &bull; %s Starter Sites', 'inspiro-blocks' ),
+                                                esc_html( number_format_i18n( $inspiro_blocks_starter_sites_count ) )
+                                            );
+                                            ?>
+                                        </h3>
+                                        <p class="wpz-onboard_content-main-intro"><?php esc_html_e( 'Looking for more? Inspiro Premium is our flagship theme for videographers, photographers, agencies and businesses, with 50+ ready-made starter sites for the Block Editor and Elementor. Browse them below and import any of them in one click after upgrading.', 'inspiro-blocks' ); ?></p>
+
+                                        <div class="inspiro-blocks-starter-sites-filters" role="group" aria-label="<?php echo esc_attr__( 'Filter starter sites by page builder', 'inspiro-blocks' ); ?>">
+                                            <button type="button" class="button is-active" data-filter="*"><?php esc_html_e( 'All', 'inspiro-blocks' ); ?></button>
+                                            <button type="button" class="button" data-filter="gutenberg"><?php echo $inspiro_blocks_gutenberg_icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG ?> <?php esc_html_e( 'Block Editor', 'inspiro-blocks' ); ?></button>
+                                            <button type="button" class="button" data-filter="elementor"><?php echo $inspiro_blocks_elementor_icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG ?> <?php esc_html_e( 'Elementor', 'inspiro-blocks' ); ?></button>
+                                        </div>
+
+                                        <ol class="wpz-onboard_content-main-steps">
+                                            <li class="wpz-onboard_content-main-step step-1 step-choose-design">
+                                                <div class="wpz-onboard_content-main-step-content">
+                                                    <form method="post" action="#">
+                                                        <ul class="inspiro-blocks-starter-sites-grid">
+                                                            <?php foreach ( $inspiro_blocks_starter_sites as $inspiro_blocks_site ) : ?>
+                                                                <li class="inspiro-blocks-starter-site <?php echo esc_attr( implode( ' ', $inspiro_blocks_site['builders'] ) ); ?>" data-builders="<?php echo esc_attr( implode( ' ', $inspiro_blocks_site['builders'] ) ); ?>">
+                                                                    <figure title="<?php echo esc_attr( $inspiro_blocks_site['title'] ); ?>">
+                                                                        <div class="preview-thumbnail" style="background-image:url('<?php echo esc_url( $inspiro_blocks_site['image'] ); ?>')">
+                                                                            <?php if ( $inspiro_blocks_site['is_new'] ) : ?>
+                                                                                <span class="inspiro-blocks-starter-site-badge"><?php esc_html_e( 'New', 'inspiro-blocks' ); ?></span>
+                                                                            <?php endif; ?>
+                                                                            <a href="<?php echo esc_url( $inspiro_blocks_site['demo_url'] ); ?>" target="_blank" rel="noopener" class="button-select-template"><?php esc_html_e( 'View Demo', 'inspiro-blocks' ); ?></a>
+                                                                        </div>
+                                                                        <figcaption>
+                                                                            <h5><?php echo esc_html( $inspiro_blocks_site['title'] ); ?></h5>
+                                                                            <?php if ( ! empty( $inspiro_blocks_site['builders'] ) ) : ?>
+                                                                                <span class="inspiro-blocks-starter-site-builders">
+                                                                                    <?php esc_html_e( 'Available for', 'inspiro-blocks' ); ?>
+                                                                                    <?php foreach ( $inspiro_blocks_site['builders'] as $inspiro_blocks_builder ) : ?>
+                                                                                        <?php if ( 'elementor' === $inspiro_blocks_builder ) : ?>
+                                                                                            <span title="<?php echo esc_attr__( 'Elementor', 'inspiro-blocks' ); ?>"><?php echo $inspiro_blocks_elementor_icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG ?></span>
+                                                                                        <?php elseif ( 'gutenberg' === $inspiro_blocks_builder ) : ?>
+                                                                                            <span title="<?php echo esc_attr__( 'Block Editor', 'inspiro-blocks' ); ?>"><?php echo $inspiro_blocks_gutenberg_icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG ?></span>
+                                                                                        <?php endif; ?>
+                                                                                    <?php endforeach; ?>
+                                                                                </span>
+                                                                            <?php endif; ?>
+                                                                            <p>
+                                                                                <?php if ( ! empty( $inspiro_blocks_site['premium_url'] ) ) : ?>
+                                                                                    <a href="<?php echo esc_url( $inspiro_blocks_site['premium_url'] ); ?>" target="_blank" rel="noopener" title="<?php echo esc_attr__( 'More info', 'inspiro-blocks' ); ?>"><?php esc_html_e( 'More info', 'inspiro-blocks' ); ?></a>
+                                                                                <?php endif; ?>
+                                                                                <a href="<?php echo esc_url( $inspiro_blocks_site['demo_url'] ); ?>" target="_blank" rel="noopener" title="<?php echo esc_attr__( 'Live preview', 'inspiro-blocks' ); ?>"><?php esc_html_e( 'Live preview', 'inspiro-blocks' ); ?></a>
+                                                                            </p>
+                                                                        </figcaption>
+                                                                    </figure>
+                                                                </li>
+                                                            <?php endforeach; ?>
+                                                        </ul>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ol>
+
+                                        <p class="inspiro-blocks-starter-sites-empty" hidden><?php esc_html_e( 'No starter sites match this filter yet.', 'inspiro-blocks' ); ?></p>
+
+                                        <br />
+                                        <p class="wpz-onboard_content-main-intro"><em><?php esc_html_e( 'New starter sites are added to Inspiro Premium every month.', 'inspiro-blocks' ); ?></em></p>
+
+                                        <a href="<?php echo esc_url( 'https://www.wpzoom.com/themes/inspiro/starter-sites/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-premium-demos' ); ?>" target="_blank" class="button button-large button-primary">
+                                            <?php esc_html_e( 'Explore All Inspiro Premium Starter Sites &rarr;', 'inspiro-blocks' ); ?>
+                                        </a>
+                                        <a href="<?php echo esc_url( 'https://www.wpzoom.com/themes/inspiro/?utm_source=wp-admin&utm_medium=inspiro-blocks-free&utm_campaign=inspiro-premium-demos' ); ?>" target="_blank" class="button button-large">
+                                            <?php esc_html_e( 'Discover Inspiro Premium', 'inspiro-blocks' ); ?>
+                                        </a>
+
+                                    </div>
+                                    <?php endif; ?>
 
                                 </div>
 
@@ -571,10 +715,10 @@ function inspiro_display_theme_page() {
                                     </svg> <?php echo esc_html__( 'Follow WPZOOM', 'inspiro-blocks' ); ?>
                                 </h3>
                                 <p class="wpz-onboard_content-side-section-content"><?php echo esc_html__( 'Follow us on social media for news and updates on all your theme needs.', 'inspiro-blocks' ); ?></p>
-                                <div class="wpz-onboard_content-side-section-button">
-                                    <a href="https://twitter.com/wpzoom" target="_blank" title="<?php echo esc_attr__( 'Twitter', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded"><span class="dashicons dashicons-twitter"></span> <span class="icon-text"><?php echo esc_html__( 'Twitter', 'inspiro-blocks' ); ?></span></a>
-                                    <a href="https://facebook.com/wpzoom" target="_blank" title="<?php echo esc_attr__( 'Facebook', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded"><svg width="18" height="18" fill="#fff" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title><?php echo esc_html__( 'Facebook', 'inspiro-blocks' ); ?></title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg> <span class="icon-text"><?php echo esc_html__( 'Facebook', 'inspiro-blocks' ); ?></span></a>
-                                    <a href="https://instagram.com/wpzoom" target="_blank" title="<?php echo esc_attr__( 'Instagram', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded"><span class="dashicons dashicons-instagram"></span> <span class="icon-text"><?php echo esc_html__( 'Instagram', 'inspiro-blocks' ); ?></span></a>
+                                <div class="wpz-onboard_content-side-section-button wpz-onboard_social-links">
+                                    <a href="https://x.com/wpzoom/" target="_blank" rel="noopener" title="<?php echo esc_attr__( 'X (Twitter)', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded button-social"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.6871 3.06299L12.6911 8.77399L8.37106 3.06299H2.11206L9.58906 12.839L2.50306 20.938H5.53706L11.0061 14.688L15.7861 20.938H21.8881L14.0941 10.634L20.7191 3.06299H17.6871ZM16.6231 19.123L5.65406 4.78199H7.45706L18.3031 19.122L16.6231 19.123Z" fill="#fff"/></svg> <span class="icon-text"><?php echo esc_html__( 'X (Twitter)', 'inspiro-blocks' ); ?></span></a>
+                                    <a href="https://www.facebook.com/wpzoom/" target="_blank" rel="noopener" title="<?php echo esc_attr__( 'Facebook', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded button-social"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z" fill="#fff"/></svg> <span class="icon-text"><?php echo esc_html__( 'Facebook', 'inspiro-blocks' ); ?></span></a>
+                                    <a href="https://www.instagram.com/wpzoom/" target="_blank" rel="noopener" title="<?php echo esc_attr__( 'Instagram', 'inspiro-blocks' ); ?>" class="button button-smaller button-rounded button-social"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="#fff"/></svg> <span class="icon-text"><?php echo esc_html__( 'Instagram', 'inspiro-blocks' ); ?></span></a>
                                 </div>
                             </div>
                         </div>

@@ -980,3 +980,168 @@ iframe {
         }
     }
 }
+
+/* Inspiro Premium starter sites (Premium Demos tab) */
+.inspiro-blocks-starter-sites {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba($dark-color, 0.1);
+
+    .button-large + .button-large {
+        margin-right: 8px;
+    }
+}
+
+.inspiro-blocks-starter-sites-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 30px;
+
+    .wp-core-ui & .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: $dark-color;
+        background: $light-color;
+        border: 1px solid $grey-color;
+        border-radius: 100px;
+        box-shadow: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $dark-color;
+            background: #f6f7f7;
+            border-color: $dark-color;
+            box-shadow: none;
+            outline: none;
+        }
+
+        &.is-active {
+            border-color: $dark-color;
+            background: $light-color;
+        }
+    }
+
+    .button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.inspiro-blocks-starter-site {
+    &.is-hidden {
+        display: none;
+    }
+}
+
+.inspiro-blocks-starter-site-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #434f69;
+    background: #f0f8ff;
+    box-shadow: 0 6px 18px rgba($dark-color, 0.16);
+}
+
+.inspiro-blocks-starter-site-builders {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: $dark-grey-color;
+
+    span {
+        display: inline-flex;
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+// Overrides for the shared .step-choose-design card styles above.
+.#{$prefix}wrapper .#{$prefix}content-wrapper .#{$prefix}content .#{$prefix}content-main .#{$prefix}content-main-steps .#{$prefix}content-main-step.step-choose-design form ul li.inspiro-blocks-starter-site figure figcaption {
+    h5 {
+        white-space: normal;
+    }
+
+    p {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 16px;
+    }
+}
+
+/* Free vs. PRO table with the extra Inspiro Premium column */
+.theme-comparison.has-premium-column {
+    .theme-comparison-header th {
+        width: 21%;
+
+        &:first-child {
+            width: 37%;
+        }
+
+        h3 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .table-premium-column .table-new-promo {
+        display: block;
+        width: max-content;
+        margin: 6px auto 0;
+    }
+
+    td {
+        padding-left: 12px;
+        padding-right: 12px;
+
+        em {
+            font-size: 13px;
+        }
+    }
+}
+
+.theme-comparison .inspiro-blocks-goto-demos {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Follow WPZOOM social buttons */
+.wpz-onboard_social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.wp-core-ui .#{$prefix}wrapper .button.button-social {
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
